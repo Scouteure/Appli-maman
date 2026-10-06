@@ -3,7 +3,6 @@
 window.FLEURS = [
   {
     nom: "Rose", latin: "Rosa", wiki: "Rosier", emoji: "🌹",
-    photo: "data/photos/rose.jpg", credit: "Illustration_Rosa_canina1.jpg",
     description: "Reine incontestée des jardins, la rose se décline en milliers de variétés : rosiers buissons, grimpants, anciens ou modernes. Ses parfums et ses couleurs en font une fleur indémodable.",
     etymologie: "« Rosa » en latin vient du grec « rhodon » (ῥόδον), lui-même emprunté à une vieille langue iranienne (« vrda » en vieux perse, « vard » en arménien). C'est le même mot qui a donné son nom à l'île de Rhodes, « l'île aux roses ».",
     floraison: "Mai à octobre selon les variétés (remontants jusqu'aux gelées)",
@@ -16,7 +15,6 @@ window.FLEURS = [
   },
   {
     nom: "Pivoine", latin: "Paeonia", wiki: "Pivoine", emoji: "🌸",
-    photo: "data/photos/pivoine.jpg", credit: "Pivoine_Desjardins.jpg",
     description: "La pivoine offre d'énormes fleurs rondes et parfumées, aux pétales froissés comme du papier de soie. Plante de longue vie, elle peut fleurir au même endroit pendant 50 ans.",
     etymologie: "Du grec « paiônia », d'après Péon (Paiôn), le médecin des dieux dans l'Iliade, qui aurait guéri Hadès et Arès avec cette plante. Théophraste et Pline rapportaient déjà cette légende, et Linné a conservé le nom en 1753.",
     floraison: "Mai à juin",
@@ -29,7 +27,6 @@ window.FLEURS = [
   },
   {
     nom: "Lavande", latin: "Lavandula angustifolia", wiki: "Lavande vraie", emoji: "💜",
-    photo: "data/photos/lavande.jpg", credit: "Lavandula-angustifolia-flowering.JPG",
     description: "Avec ses épis violets et son parfum de Provence, la lavande attire les abeilles et les papillons. Son feuillage gris-vert reste décoratif toute l'année.",
     etymologie: "Du latin médiéval « lavandula », dérivé de « lavare », laver : les Romains en parfumaient l'eau des bains et le linge. Certains y voient aussi « lividus », bleuâtre. « Angustifolia » signifie « à feuilles étroites ».",
     floraison: "Juin à août",
@@ -42,7 +39,6 @@ window.FLEURS = [
   },
   {
     nom: "Tulipe", latin: "Tulipa", wiki: "Tulipe", emoji: "🌷",
-    photo: "data/photos/tulipe.jpg", credit: "Tulip_Tulipa_clusiana_'Lady_Jane'_Rock_Ledge_Plant_1730px.jpg",
     description: "Symbole du printemps, la tulipe existe dans presque toutes les couleurs, en formes simples, doubles, frangées ou perroquet. Plantée en masse, elle offre un spectacle éclatant.",
     etymologie: "Du turc « tülbent », lui-même du persan « dulband », le turban, à cause de la forme de la fleur. Le mot est né d'un malentendu : au XVIe siècle, l'ambassadeur Ogier de Busbecq, à Constantinople, aurait pris pour le nom de la fleur celui du turban qu'on en ornait.",
     floraison: "Mars à mai selon les variétés",
@@ -55,7 +51,6 @@ window.FLEURS = [
   },
   {
     nom: "Hortensia", latin: "Hydrangea macrophylla", wiki: "Hydrangea macrophylla", emoji: "💙",
-    photo: "data/photos/hortensia.jpg", credit: "Hydrangea_macrophylla_SZ53.png",
     description: "L'hortensia forme de gros pompons bleus, roses ou blancs qui durent tout l'été. La couleur de ses fleurs dépend de l'acidité du sol : bleu en terre acide, rose en terre calcaire.",
     etymologie: "« Hydrangea », du grec « hudôr » (eau) et « angeion » (vase), pour la capsule des graines en forme de petite cruche. Le nom d'« hortensia » fut donné par Philibert Commerson vers 1771 ; on hésite encore sur l'Hortense honorée, sans doute Nicole-Reine Lepaute, astronome et amie du botaniste. « Macrophylla » : « à grandes feuilles ».",
     floraison: "Juin à septembre",
@@ -68,7 +63,6 @@ window.FLEURS = [
   },
   {
     nom: "Dahlia", latin: "Dahlia", wiki: "Dahlia", emoji: "🌺",
-    photo: "data/photos/dahlia.jpg", credit: "Erntedank_Dahlie_Engelhardt.JPG",
     description: "Originaire du Mexique, le dahlia est le roi des massifs de fin d'été, avec des fleurs de toutes tailles, du pompon au géant de 25 cm, dans des coloris flamboyants.",
     etymologie: "Nommé en 1791 par l'abbé Cavanilles, à Madrid, en l'honneur d'Anders Dahl, botaniste suédois et élève de Linné. Les Aztèques l'appelaient « acocoxochitl », « la fleur à tige creuse », et l'utilisaient comme plante alimentaire et médicinale.",
     floraison: "Juillet jusqu'aux premières gelées",
@@ -81,7 +75,6 @@ window.FLEURS = [
   },
   {
     nom: "Jasmin", latin: "Jasminum officinale", wiki: "Jasminum officinale", emoji: "🤍",
-    photo: "data/photos/jasmin.jpg", credit: "Jasminum_officinale_-_Bot._Mag._31,_1787.jpg",
     description: "Grimpante au parfum envoûtant, le jasmin blanc embaume les soirées d'été. Il habille joliment un treillage, une pergola ou un mur bien exposé.",
     etymologie: "Du persan « yâsaman », passé par l'arabe « yâsamîn » puis par le latin médiéval. « Officinale » signifie « des officines », car la plante figurait dans la pharmacopée des apothicaires.",
     floraison: "Juin à septembre",
@@ -94,7 +87,6 @@ window.FLEURS = [
   },
   {
     nom: "Tournesol", latin: "Helianthus annuus", wiki: "Tournesol", emoji: "🌻",
-    photo: "data/photos/tournesol.jpg", credit: "Helianthus_annuus_0001.JPG",
     description: "Le tournesol suit le soleil dans sa course et peut dépasser 3 mètres de haut. Ses grands capitules jaunes nourrissent les abeilles, puis les oiseaux en automne.",
     etymologie: "« Helianthus » vient du grec « hêlios » (soleil) et « anthos » (fleur). Le mot français est emprunté à l'italien « girasole », « qui tourne avec le soleil » : les jeunes plants suivent effectivement sa course, un phénomène appelé héliotropisme.",
     floraison: "Juillet à septembre",
@@ -107,7 +99,6 @@ window.FLEURS = [
   },
   {
     nom: "Lilas", latin: "Syringa vulgaris", wiki: "Lilas commun", emoji: "💐",
-    photo: "data/photos/lilas.jpg", credit: "Lilac_(2).jpg",
     description: "Le lilas annonce le vrai printemps avec ses grappes parfumées mauves, blanches ou pourpres. Arbuste robuste et peu exigeant, il vit très longtemps.",
     etymologie: "« Syringa » vient du grec « surinx », la flûte ou le tuyau, car ses tiges creuses servaient à faire des pipeaux, comme la flûte de Pan. « Lilas » vient du persan « lîlak », dérivé de « nîl », l'indigo : « le bleuâtre ». Il arriva en Europe depuis Constantinople au XVIe siècle.",
     floraison: "Avril à mai",
@@ -120,7 +111,6 @@ window.FLEURS = [
   },
   {
     nom: "Camélia", latin: "Camellia japonica", wiki: "Camellia japonica", emoji: "🌸",
-    photo: "data/photos/camelia.jpg", credit: "Camellia_japonica_'Pink_Perfection'.jpg",
     description: "Le camélia fleurit en plein hiver, quand le jardin semble endormi. Ses fleurs rondes, parfaites, se détachent sur un feuillage vernissé et persistant.",
     etymologie: "Linné le nomma en l'honneur de Georg Joseph Kamel (latinisé en Camellus), jésuite morave et pharmacien aux Philippines au XVIIe siècle, qui pourtant n'avait jamais décrit cette plante. « Japonica » : « du Japon ». Dumas fils lui offrit la gloire avec « La Dame aux camélias ».",
     floraison: "Novembre à avril selon les variétés",
@@ -133,7 +123,6 @@ window.FLEURS = [
   },
   {
     nom: "Iris", latin: "Iris germanica", wiki: "Iris (plante)", emoji: "💙",
-    photo: "data/photos/iris.jpg", credit: "Eriskircher_Ried_037-2.jpg",
     description: "L'iris des jardins déploie des fleurs sophistiquées aux pétales dressés et retombants, souvent bicolores. Ses rhizomes se multiplient facilement d'année en année.",
     etymologie: "D'après Iris, la messagère des dieux dans la mythologie grecque, personnification de l'arc-en-ciel : un hommage aux innombrables couleurs de la fleur. La « fleur de lys » des rois de France serait en réalité un iris, « fleur de Louis » devenu « fleur de lys ».",
     floraison: "Avril à juin",
@@ -146,7 +135,6 @@ window.FLEURS = [
   },
   {
     nom: "Géranium (Pélargonium)", latin: "Pelargonium", wiki: "Pelargonium", emoji: "🌺",
-    photo: "data/photos/geranium-pelargonium.jpg", credit: "Pelargonium_capitatum_flickrWright.jpg",
     description: "Le pélargonium, qu'on appelle géranium des balcons, fleurit sans interruption tout l'été. Zonale, lierre ou odorant, il est la star des jardinières.",
     etymologie: "« Pelargonium » vient du grec « pelargos », la cigogne, car le fruit ressemble à un bec de cigogne ; « Geranium », son cousin, vient de « geranos », la grue. C'est le Français L'Héritier de Brutelle qui sépara les deux genres en 1789. Nos « géraniums » de balcon sont presque tous des pélargoniums.",
     floraison: "Mai jusqu'aux gelées",
@@ -159,7 +147,6 @@ window.FLEURS = [
   },
   {
     nom: "Marguerite", latin: "Leucanthemum vulgare", wiki: "Marguerite commune", emoji: "🌼",
-    photo: "data/photos/marguerite.jpg", credit: "Leucanthemum_vulgare_2007-06-02_(plants).jpg",
     description: "Simple et joyeuse, la marguerite illumine les prairies et les massifs de ses fleurs blanches à cœur jaune. Elle est parfaite pour un jardin champêtre.",
     etymologie: "« Leucanthemum » vient du grec « leukos » (blanc) et « anthemon » (fleur). « Marguerite » vient du latin « margarita », la perle, lui-même du grec « margaritês », sans doute d'origine orientale : la fleur comme une perle blanche posée sur l'herbe.",
     floraison: "Mai à août",
@@ -172,7 +159,6 @@ window.FLEURS = [
   },
   {
     nom: "Clématite", latin: "Clematis", wiki: "Clématite", emoji: "💜",
-    photo: "data/photos/clematite.jpg", credit: "Clematis_vitalba_bgiu.jpg",
     description: "Grimpante aux grandes fleurs étoilées, la clématite habille un grillage ou s'accroche dans un rosier. Il en existe pour toutes les saisons.",
     etymologie: "Du grec « klêmatis », diminutif de « klêma », le sarment de vigne, nom que Dioscoride donnait déjà à une plante grimpante. On l'appelait aussi « herbe aux gueux » : les mendiants s'en frottaient la peau pour provoquer des plaies et attirer la pitié.",
     floraison: "Avril à septembre selon les espèces",
@@ -689,6 +675,7 @@ window.FLEURS = [
   },
   {
     nom: "Pâquerette", latin: "Bellis perennis", wiki: "Pâquerette", emoji: "🌼",
+    photo: "data/photos/paquerette.jpg", credit: "Bellis_perennis_Sturm9.jpg",
     description: "La petite pâquerette des pelouses existe aussi en variétés horticoles aux fleurs doubles, roses ou rouges, parfaites pour les bordures de printemps.",
     etymologie: "« Bellis » vient du latin « bellus », joli ; « perennis » signifie « vivace ». « Pâquerette » rappelle qu'elle fleurit autour de Pâques. Les Anglais l'appellent « daisy », « l'œil du jour », car elle s'ouvre le matin et se ferme le soir.",
     floraison: "Mars à juin",
