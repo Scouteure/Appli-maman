@@ -1,0 +1,237 @@
+:root {
+  --fond: #fdf2f4;
+  --fond-2: #fbe4ea;
+  --carte: #ffffff;
+  --texte: #4a3b42;
+  --texte-doux: #8a7079;
+  --rose: #e0718f;
+  --rose-fonce: #c9507a;
+  --vert: #6f9e7a;
+  --vert-clair: #e8f3ea;
+  --ombre: 0 12px 40px rgba(201, 80, 122, 0.12);
+}
+
+* { box-sizing: border-box; }
+
+html, body { margin: 0; padding: 0; }
+
+body {
+  font-family: "Nunito", system-ui, sans-serif;
+  color: var(--texte);
+  background: linear-gradient(160deg, var(--fond) 0%, var(--fond-2) 100%);
+  min-height: 100vh;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+.page {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 32px 16px 48px;
+  position: relative;
+  z-index: 1;
+}
+
+.carte {
+  background: var(--carte);
+  border-radius: 28px;
+  box-shadow: var(--ombre);
+  padding: 32px 24px;
+  margin-bottom: 24px;
+  animation: apparition 0.7s ease both;
+}
+
+@keyframes apparition {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* --- Message --- */
+.message-carte { text-align: center; }
+
+.date {
+  margin: 0 0 12px;
+  color: var(--texte-doux);
+  font-size: 0.95rem;
+}
+
+.message {
+  font-family: "Caveat", cursive;
+  font-weight: 700;
+  font-size: clamp(1.9rem, 6vw, 2.6rem);
+  line-height: 1.25;
+  margin: 0 0 12px;
+  color: var(--rose-fonce);
+}
+
+.signature {
+  margin: 0 0 28px;
+  color: var(--texte-doux);
+  font-style: italic;
+}
+
+.bouton {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: #fff;
+  background: linear-gradient(135deg, var(--rose) 0%, var(--rose-fonce) 100%);
+  border: none;
+  border-radius: 999px;
+  padding: 16px 28px;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(201, 80, 122, 0.3);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.bouton:hover, .bouton:focus-visible { transform: translateY(-2px); box-shadow: 0 12px 26px rgba(201, 80, 122, 0.38); outline: none; }
+.bouton:active { transform: translateY(0); }
+
+/* --- Fleur --- */
+.fleur-carte.cachee { display: none; }
+
+.surtitre {
+  margin: 0;
+  text-align: center;
+  color: var(--vert);
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.fleur-nom {
+  font-family: "Caveat", cursive;
+  font-size: clamp(2.2rem, 8vw, 3rem);
+  text-align: center;
+  margin: 4px 0 0;
+  color: var(--rose-fonce);
+  line-height: 1.1;
+}
+
+.fleur-latin {
+  text-align: center;
+  font-style: italic;
+  color: var(--texte-doux);
+  margin: 0 0 20px;
+}
+
+.fleur-photo {
+  margin: 0 0 20px;
+  border-radius: 20px;
+  overflow: hidden;
+  background: var(--vert-clair);
+  position: relative;
+  aspect-ratio: 4 / 3;
+}
+.fleur-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: none;
+}
+.fleur-photo.chargee img { display: block; }
+.fleur-photo.chargee .photo-placeholder { display: none; }
+.photo-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 5rem;
+}
+.fleur-photo figcaption {
+  position: absolute;
+  bottom: 0; right: 0;
+  font-size: 0.7rem;
+  color: #fff;
+  background: rgba(0,0,0,0.35);
+  padding: 2px 8px;
+  border-top-left-radius: 8px;
+}
+.fleur-photo figcaption:empty { display: none; }
+
+.fleur-description {
+  font-size: 1.08rem;
+  margin: 0 0 24px;
+}
+
+.infos {
+  display: grid;
+  gap: 14px;
+  margin-bottom: 24px;
+}
+.info {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  background: #fff8f9;
+  border: 1px solid #f7dde4;
+  border-radius: 16px;
+  padding: 12px 14px;
+}
+.info-icone { font-size: 1.4rem; line-height: 1.2; }
+.info strong { display: block; color: var(--rose-fonce); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.06em; }
+.info p { margin: 2px 0 0; }
+
+.astuce {
+  background: var(--vert-clair);
+  border-left: 4px solid var(--vert);
+  border-radius: 12px;
+  padding: 14px 16px;
+  margin-bottom: 20px;
+}
+.astuce strong { color: var(--vert); }
+.astuce p { margin: 6px 0 0; }
+
+.symbole {
+  color: var(--texte-doux);
+  font-style: italic;
+  margin: 0 0 20px;
+}
+.symbole strong { font-style: normal; }
+
+.lien-wiki {
+  display: inline-block;
+  color: var(--rose-fonce);
+  font-weight: 700;
+  text-decoration: none;
+  border-bottom: 2px solid #f3c7d4;
+}
+.lien-wiki:hover { border-color: var(--rose-fonce); }
+
+.a-demain {
+  margin: 28px 0 0;
+  text-align: center;
+  color: var(--texte-doux);
+}
+
+/* --- Pétales qui tombent --- */
+.petales {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 0;
+}
+.petale {
+  position: absolute;
+  top: -40px;
+  font-size: 1.3rem;
+  opacity: 0.6;
+  animation: chute linear infinite;
+}
+@keyframes chute {
+  0%   { transform: translateY(0) rotate(0deg); }
+  100% { transform: translateY(110vh) rotate(360deg); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .petale { display: none; }
+  .carte { animation: none; }
+}
+
+@media (min-width: 520px) {
+  .carte { padding: 40px 36px; }
+  .infos { grid-template-columns: 1fr 1fr; }
+}

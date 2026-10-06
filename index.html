@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fdf2f4">
+  <title>Pour maman 🌸</title>
+  <meta name="description" content="Un petit message et une fleur chaque jour, pour maman.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌸</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="petales" aria-hidden="true"></div>
+
+  <main class="page">
+    <section class="carte message-carte" id="message-section">
+      <p class="date" id="date-du-jour"></p>
+      <h1 class="message" id="message-du-jour"></h1>
+      <p class="signature">Avec tout mon amour 💕</p>
+      <button class="bouton" id="bouton-fleur" type="button">
+        🌷 Découvrir la fleur du jour
+      </button>
+    </section>
+
+    <section class="carte fleur-carte cachee" id="fleur-section" aria-hidden="true">
+      <p class="surtitre">La fleur du jour</p>
+      <h2 class="fleur-nom" id="fleur-nom"></h2>
+      <p class="fleur-latin" id="fleur-latin"></p>
+
+      <figure class="fleur-photo" id="fleur-photo">
+        <div class="photo-placeholder" id="photo-placeholder"></div>
+        <img id="fleur-image" alt="">
+        <figcaption id="fleur-credit"></figcaption>
+      </figure>
+
+      <p class="fleur-description" id="fleur-description"></p>
+
+      <div class="infos">
+        <div class="info"><span class="info-icone">🗓️</span><div><strong>Floraison</strong><p id="fleur-floraison"></p></div></div>
+        <div class="info"><span class="info-icone">☀️</span><div><strong>Exposition</strong><p id="fleur-exposition"></p></div></div>
+        <div class="info"><span class="info-icone">💧</span><div><strong>Arrosage</strong><p id="fleur-arrosage"></p></div></div>
+        <div class="info"><span class="info-icone">🪴</span><div><strong>Sol</strong><p id="fleur-sol"></p></div></div>
+        <div class="info"><span class="info-icone">🌱</span><div><strong>Plantation</strong><p id="fleur-plantation"></p></div></div>
+      </div>
+
+      <div class="astuce">
+        <strong>💡 Le petit conseil</strong>
+        <p id="fleur-conseil"></p>
+      </div>
+
+      <p class="symbole"><strong>Dans le langage des fleurs :</strong> <span id="fleur-symbole"></span></p>
+
+      <a class="lien-wiki" id="fleur-lien" href="#" target="_blank" rel="noopener">En savoir plus sur Wikipédia ↗</a>
+
+      <p class="a-demain">À demain pour une nouvelle fleur 🌸</p>
+    </section>
+  </main>
+
+  <script src="data/messages.js"></script>
+  <script src="data/fleurs.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
