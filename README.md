@@ -40,3 +40,15 @@ python3 -m http.server 8000
 ```
 
 puis va sur http://localhost:8000.
+
+## Compléter les photos embarquées
+
+Les fleurs sans photo dans `data/photos/` la chargent depuis Wikipédia au moment de l'affichage.
+Pour les embarquer avec le site (plus rapide et indépendant de Wikipédia) :
+
+```
+pip install pillow
+python3 outils/telecharger_photos.py
+```
+
+Le script ne traite que les fleurs qui n'ont pas encore de photo, et met à jour `data/fleurs.js` tout seul. Il suffit ensuite de commiter et pousser.

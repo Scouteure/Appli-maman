@@ -185,6 +185,7 @@ window.FLEURS = [
   },
   {
     nom: "Jonquille", latin: "Narcissus", wiki: "Narcisse jaune", emoji: "🌼",
+    photo: "data/photos/paquerette.jpg", credit: "Bellis_perennis_Sturm9.jpg",
     description: "Les jonquilles et narcisses sont parmi les premières fleurs du printemps. Leurs trompettes jaunes ou blanches reviennent fidèlement chaque année et se naturalisent dans la pelouse.",
     etymologie: "« Narcissus » vient du grec « narkê », la torpeur, dont vient aussi « narcotique » : Pline attribuait à la fleur des vertus engourdissantes. Le mythe de Narcisse s'y est greffé ensuite. « Jonquille » vient de l'espagnol « junquillo », petit jonc, pour ses feuilles fines.",
     floraison: "Février à avril",
@@ -774,6 +775,7 @@ window.FLEURS = [
   },
   {
     nom: "Campanule", latin: "Campanula", wiki: "Campanule", emoji: "💙",
+    photo: "data/photos/campanule.jpg", credit: "Campanula_patula_bgiu.jpg",
     description: "Les campanules offrent des clochettes bleues ou blanches en touffes basses ou en hautes hampes. Les variétés rampantes débordent joliment des murets.",
     etymologie: "Du latin « campana », la cloche, avec un diminutif : « la petite cloche ». Le mot « campana » vient lui-même de la Campanie, région d'Italie réputée pour son bronze.",
     floraison: "Mai à août",
