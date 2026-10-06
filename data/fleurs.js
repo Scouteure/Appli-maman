@@ -120,6 +120,7 @@ window.FLEURS = [
   },
   {
     nom: "Camélia", latin: "Camellia japonica", wiki: "Camellia japonica", emoji: "🌸",
+    photo: "data/photos/camelia.jpg", credit: "Camellia_japonica_'Pink_Perfection'.jpg",
     description: "Le camélia fleurit en plein hiver, quand le jardin semble endormi. Ses fleurs rondes, parfaites, se détachent sur un feuillage vernissé et persistant.",
     etymologie: "Linné le nomma en l'honneur de Georg Joseph Kamel (latinisé en Camellus), jésuite morave et pharmacien aux Philippines au XVIIe siècle, qui pourtant n'avait jamais décrit cette plante. « Japonica » : « du Japon ». Dumas fils lui offrit la gloire avec « La Dame aux camélias ».",
     floraison: "Novembre à avril selon les variétés",
@@ -132,6 +133,7 @@ window.FLEURS = [
   },
   {
     nom: "Iris", latin: "Iris germanica", wiki: "Iris (plante)", emoji: "💙",
+    photo: "data/photos/iris.jpg", credit: "Eriskircher_Ried_037-2.jpg",
     description: "L'iris des jardins déploie des fleurs sophistiquées aux pétales dressés et retombants, souvent bicolores. Ses rhizomes se multiplient facilement d'année en année.",
     etymologie: "D'après Iris, la messagère des dieux dans la mythologie grecque, personnification de l'arc-en-ciel : un hommage aux innombrables couleurs de la fleur. La « fleur de lys » des rois de France serait en réalité un iris, « fleur de Louis » devenu « fleur de lys ».",
     floraison: "Avril à juin",
@@ -144,6 +146,7 @@ window.FLEURS = [
   },
   {
     nom: "Géranium (Pélargonium)", latin: "Pelargonium", wiki: "Pelargonium", emoji: "🌺",
+    photo: "data/photos/geranium-pelargonium.jpg", credit: "Pelargonium_capitatum_flickrWright.jpg",
     description: "Le pélargonium, qu'on appelle géranium des balcons, fleurit sans interruption tout l'été. Zonale, lierre ou odorant, il est la star des jardinières.",
     etymologie: "« Pelargonium » vient du grec « pelargos », la cigogne, car le fruit ressemble à un bec de cigogne ; « Geranium », son cousin, vient de « geranos », la grue. C'est le Français L'Héritier de Brutelle qui sépara les deux genres en 1789. Nos « géraniums » de balcon sont presque tous des pélargoniums.",
     floraison: "Mai jusqu'aux gelées",
@@ -156,6 +159,7 @@ window.FLEURS = [
   },
   {
     nom: "Marguerite", latin: "Leucanthemum vulgare", wiki: "Marguerite commune", emoji: "🌼",
+    photo: "data/photos/marguerite.jpg", credit: "Leucanthemum_vulgare_2007-06-02_(plants).jpg",
     description: "Simple et joyeuse, la marguerite illumine les prairies et les massifs de ses fleurs blanches à cœur jaune. Elle est parfaite pour un jardin champêtre.",
     etymologie: "« Leucanthemum » vient du grec « leukos » (blanc) et « anthemon » (fleur). « Marguerite » vient du latin « margarita », la perle, lui-même du grec « margaritês », sans doute d'origine orientale : la fleur comme une perle blanche posée sur l'herbe.",
     floraison: "Mai à août",
@@ -168,6 +172,7 @@ window.FLEURS = [
   },
   {
     nom: "Clématite", latin: "Clematis", wiki: "Clématite", emoji: "💜",
+    photo: "data/photos/clematite.jpg", credit: "Clematis_vitalba_bgiu.jpg",
     description: "Grimpante aux grandes fleurs étoilées, la clématite habille un grillage ou s'accroche dans un rosier. Il en existe pour toutes les saisons.",
     etymologie: "Du grec « klêmatis », diminutif de « klêma », le sarment de vigne, nom que Dioscoride donnait déjà à une plante grimpante. On l'appelait aussi « herbe aux gueux » : les mendiants s'en frottaient la peau pour provoquer des plaies et attirer la pitié.",
     floraison: "Avril à septembre selon les espèces",
