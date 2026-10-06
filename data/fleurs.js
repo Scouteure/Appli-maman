@@ -3,6 +3,7 @@
 window.FLEURS = [
   {
     nom: "Rose", latin: "Rosa", wiki: "Rosier", emoji: "🌹",
+    photo: "data/photos/rose.jpg", credit: "Illustration_Rosa_canina1.jpg",
     description: "Reine incontestée des jardins, la rose se décline en milliers de variétés : rosiers buissons, grimpants, anciens ou modernes. Ses parfums et ses couleurs en font une fleur indémodable.",
     etymologie: "« Rosa » en latin vient du grec « rhodon » (ῥόδον), lui-même emprunté à une vieille langue iranienne (« vrda » en vieux perse, « vard » en arménien). C'est le même mot qui a donné son nom à l'île de Rhodes, « l'île aux roses ».",
     floraison: "Mai à octobre selon les variétés (remontants jusqu'aux gelées)",
@@ -15,6 +16,7 @@ window.FLEURS = [
   },
   {
     nom: "Pivoine", latin: "Paeonia", wiki: "Pivoine", emoji: "🌸",
+    photo: "data/photos/pivoine.jpg", credit: "Pivoine_Desjardins.jpg",
     description: "La pivoine offre d'énormes fleurs rondes et parfumées, aux pétales froissés comme du papier de soie. Plante de longue vie, elle peut fleurir au même endroit pendant 50 ans.",
     etymologie: "Du grec « paiônia », d'après Péon (Paiôn), le médecin des dieux dans l'Iliade, qui aurait guéri Hadès et Arès avec cette plante. Théophraste et Pline rapportaient déjà cette légende, et Linné a conservé le nom en 1753.",
     floraison: "Mai à juin",
@@ -27,6 +29,7 @@ window.FLEURS = [
   },
   {
     nom: "Lavande", latin: "Lavandula angustifolia", wiki: "Lavande vraie", emoji: "💜",
+    photo: "data/photos/lavande.jpg", credit: "Lavandula-angustifolia-flowering.JPG",
     description: "Avec ses épis violets et son parfum de Provence, la lavande attire les abeilles et les papillons. Son feuillage gris-vert reste décoratif toute l'année.",
     etymologie: "Du latin médiéval « lavandula », dérivé de « lavare », laver : les Romains en parfumaient l'eau des bains et le linge. Certains y voient aussi « lividus », bleuâtre. « Angustifolia » signifie « à feuilles étroites ».",
     floraison: "Juin à août",
@@ -39,6 +42,7 @@ window.FLEURS = [
   },
   {
     nom: "Tulipe", latin: "Tulipa", wiki: "Tulipe", emoji: "🌷",
+    photo: "data/photos/tulipe.jpg", credit: "Tulip_Tulipa_clusiana_'Lady_Jane'_Rock_Ledge_Plant_1730px.jpg",
     description: "Symbole du printemps, la tulipe existe dans presque toutes les couleurs, en formes simples, doubles, frangées ou perroquet. Plantée en masse, elle offre un spectacle éclatant.",
     etymologie: "Du turc « tülbent », lui-même du persan « dulband », le turban, à cause de la forme de la fleur. Le mot est né d'un malentendu : au XVIe siècle, l'ambassadeur Ogier de Busbecq, à Constantinople, aurait pris pour le nom de la fleur celui du turban qu'on en ornait.",
     floraison: "Mars à mai selon les variétés",
@@ -51,6 +55,7 @@ window.FLEURS = [
   },
   {
     nom: "Hortensia", latin: "Hydrangea macrophylla", wiki: "Hydrangea macrophylla", emoji: "💙",
+    photo: "data/photos/hortensia.jpg", credit: "Hydrangea_macrophylla_SZ53.png",
     description: "L'hortensia forme de gros pompons bleus, roses ou blancs qui durent tout l'été. La couleur de ses fleurs dépend de l'acidité du sol : bleu en terre acide, rose en terre calcaire.",
     etymologie: "« Hydrangea », du grec « hudôr » (eau) et « angeion » (vase), pour la capsule des graines en forme de petite cruche. Le nom d'« hortensia » fut donné par Philibert Commerson vers 1771 ; on hésite encore sur l'Hortense honorée, sans doute Nicole-Reine Lepaute, astronome et amie du botaniste. « Macrophylla » : « à grandes feuilles ».",
     floraison: "Juin à septembre",
@@ -63,6 +68,7 @@ window.FLEURS = [
   },
   {
     nom: "Dahlia", latin: "Dahlia", wiki: "Dahlia", emoji: "🌺",
+    photo: "data/photos/dahlia.jpg", credit: "Erntedank_Dahlie_Engelhardt.JPG",
     description: "Originaire du Mexique, le dahlia est le roi des massifs de fin d'été, avec des fleurs de toutes tailles, du pompon au géant de 25 cm, dans des coloris flamboyants.",
     etymologie: "Nommé en 1791 par l'abbé Cavanilles, à Madrid, en l'honneur d'Anders Dahl, botaniste suédois et élève de Linné. Les Aztèques l'appelaient « acocoxochitl », « la fleur à tige creuse », et l'utilisaient comme plante alimentaire et médicinale.",
     floraison: "Juillet jusqu'aux premières gelées",
@@ -75,6 +81,7 @@ window.FLEURS = [
   },
   {
     nom: "Jasmin", latin: "Jasminum officinale", wiki: "Jasminum officinale", emoji: "🤍",
+    photo: "data/photos/jasmin.jpg", credit: "Jasminum_officinale_-_Bot._Mag._31,_1787.jpg",
     description: "Grimpante au parfum envoûtant, le jasmin blanc embaume les soirées d'été. Il habille joliment un treillage, une pergola ou un mur bien exposé.",
     etymologie: "Du persan « yâsaman », passé par l'arabe « yâsamîn » puis par le latin médiéval. « Officinale » signifie « des officines », car la plante figurait dans la pharmacopée des apothicaires.",
     floraison: "Juin à septembre",
@@ -87,6 +94,7 @@ window.FLEURS = [
   },
   {
     nom: "Tournesol", latin: "Helianthus annuus", wiki: "Tournesol", emoji: "🌻",
+    photo: "data/photos/tournesol.jpg", credit: "Helianthus_annuus_0001.JPG",
     description: "Le tournesol suit le soleil dans sa course et peut dépasser 3 mètres de haut. Ses grands capitules jaunes nourrissent les abeilles, puis les oiseaux en automne.",
     etymologie: "« Helianthus » vient du grec « hêlios » (soleil) et « anthos » (fleur). Le mot français est emprunté à l'italien « girasole », « qui tourne avec le soleil » : les jeunes plants suivent effectivement sa course, un phénomène appelé héliotropisme.",
     floraison: "Juillet à septembre",
@@ -99,6 +107,7 @@ window.FLEURS = [
   },
   {
     nom: "Lilas", latin: "Syringa vulgaris", wiki: "Lilas commun", emoji: "💐",
+    photo: "data/photos/lilas.jpg", credit: "Lilac_(2).jpg",
     description: "Le lilas annonce le vrai printemps avec ses grappes parfumées mauves, blanches ou pourpres. Arbuste robuste et peu exigeant, il vit très longtemps.",
     etymologie: "« Syringa » vient du grec « surinx », la flûte ou le tuyau, car ses tiges creuses servaient à faire des pipeaux, comme la flûte de Pan. « Lilas » vient du persan « lîlak », dérivé de « nîl », l'indigo : « le bleuâtre ». Il arriva en Europe depuis Constantinople au XVIe siècle.",
     floraison: "Avril à mai",

@@ -88,41 +88,43 @@
 
     var titre = fleur.wiki.replace(/ /g, "_");
 
-    function afficherImage(src, secours) {
-      img.onload = function () { figure.classList.add("chargee"); credit.textContent = "Photo : Wikipédia"; };
-      img.onerror = function () {
-        img.onerror = null;
-        if (secours && secours !== src) img.src = secours;
-      };
+    function montrerCredit(fichier) {
+      credit.textContent = "";
+      var texte = "Photo : Wikimedia Commons";
+      if (fichier) {
+        var lien = document.createElement("a");
+        lien.href = "https://commons.wikimedia.org/wiki/File:" + encodeURIComponent(fichier);
+        lien.target = "_blank";
+        lien.rel = "noopener";
+        lien.textContent = texte;
+        credit.appendChild(lien);
+      } else {
+        credit.textContent = texte;
+      }
+    }
+
+    function afficherImage(src, fichier, sinon) {
+      img.onload = function () { figure.classList.add("chargee"); montrerCredit(fichier); };
+      img.onerror = function () { img.onerror = null; if (sinon) sinon(); };
       img.src = src;
     }
 
-    // Source 1 : résumé de la page (API REST de Wikipédia).
-    function viaRest() {
-      var url = "https://fr.wikipedia.org/api/rest_v1/page/summary/" + encodeURIComponent(titre);
-      return fetch(url, { headers: { Accept: "application/json" } })
-        .then(function (r) { return r.ok ? r.json() : Promise.reject(new Error("rest " + r.status)); })
-        .then(function (data) {
-          var source = data && (data.originalimage || data.thumbnail);
-          if (!source || !source.source) throw new Error("pas d'image");
-          afficherImage(source.source.replace(/\/\d+px-/, "/900px-"), source.source);
-        });
-    }
-
-    // Source 2 : API classique de MediaWiki, en secours.
-    function viaApi() {
-      var url = "https://fr.wikipedia.org/w/api.php?action=query&format=json&origin=*&prop=pageimages&piprop=thumbnail&pithumbsize=900&redirects=1&titles=" + encodeURIComponent(titre);
-      return fetch(url)
-        .then(function (r) { return r.ok ? r.json() : Promise.reject(new Error("api " + r.status)); })
+    // Source de secours : la photo de la page Wikipédia, via l'API de MediaWiki.
+    function viaWikipedia() {
+      var url = "https://fr.wikipedia.org/w/api.php?action=query&format=json&origin=*&prop=pageimages&piprop=thumbnail|name&pithumbsize=640&redirects=1&titles=" + encodeURIComponent(titre);
+      fetch(url)
+        .then(function (r) { return r.ok ? r.json() : null; })
         .then(function (data) {
           var pages = data && data.query && data.query.pages;
           var page = pages && pages[Object.keys(pages)[0]];
-          if (!page || !page.thumbnail || !page.thumbnail.source) throw new Error("pas d'image");
-          afficherImage(page.thumbnail.source);
-        });
+          if (page && page.thumbnail && page.thumbnail.source) afficherImage(page.thumbnail.source, page.pageimage);
+        })
+        .catch(function () { /* pas de photo, l'emoji reste affiché */ });
     }
 
-    viaRest().catch(viaApi).catch(function () { /* pas de photo, l'emoji reste affiché */ });
+    // Source principale : la photo embarquée avec le site.
+    if (fleur.photo) afficherImage(fleur.photo, fleur.credit, viaWikipedia);
+    else viaWikipedia();
   }
 
   function afficherFleur(fleur) {

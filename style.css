@@ -150,6 +150,7 @@ body {
   border-top-left-radius: 8px;
 }
 .fleur-photo figcaption:empty { display: none; }
+.fleur-photo figcaption a { color: inherit; text-decoration: none; }
 
 .fleur-description {
   font-size: 1.08rem;
