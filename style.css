@@ -156,6 +156,27 @@ body {
   margin: 0 0 24px;
 }
 
+.etymologie {
+  background: linear-gradient(180deg, #fff9ec 0%, #fdf3dc 100%);
+  border: 1px solid #f1e2bf;
+  border-radius: 18px;
+  padding: 18px 20px;
+  margin-bottom: 24px;
+  box-shadow: inset 0 1px 0 #fffdf6;
+}
+.etymologie-titre {
+  margin: 0 0 8px;
+  font-family: "Caveat", cursive;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #9a6b1f;
+  line-height: 1.1;
+}
+.etymologie p:last-child {
+  margin: 0;
+  font-size: 1.02rem;
+  color: #5a4a2e;
+}
 .infos {
   display: grid;
   gap: 14px;

@@ -129,6 +129,7 @@
     texte("fleur-nom", fleur.nom);
     texte("fleur-latin", fleur.latin);
     texte("fleur-description", fleur.description);
+    texte("fleur-etymologie", fleur.etymologie);
     texte("fleur-floraison", fleur.floraison);
     texte("fleur-exposition", fleur.exposition);
     texte("fleur-arrosage", fleur.arrosage);

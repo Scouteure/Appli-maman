@@ -4,7 +4,7 @@ Une petite page web, à ouvrir chaque jour, qui affiche :
 
 1. un gentil message qui change tous les jours ;
 2. un bouton « Découvrir la fleur du jour » ;
-3. une fiche fleur (photo, description, floraison, exposition, arrosage, sol, plantation, conseil, langage des fleurs) qui change aussi tous les jours.
+3. une fiche fleur (photo, description, étymologie du nom, floraison, exposition, arrosage, sol, plantation, conseil, langage des fleurs) qui change aussi tous les jours.
 
 Tout fonctionne sans serveur : ce sont de simples fichiers HTML / CSS / JavaScript.
 Il y a 70 fleurs et 45 messages, qui tournent automatiquement en boucle.
@@ -23,7 +23,7 @@ Tu peux envoyer ce lien à ta maman ; sur téléphone, elle peut même l'ajouter
 - **Les messages** : `data/messages.js`. Ajoute ou modifie des lignes dans la liste `MESSAGES`.
 - **Les messages pour une date précise** (anniversaire, etc.) : dans le même fichier, `MESSAGES_SPECIAUX`, au format `"MM-JJ": "Message"`. Un exemple est déjà prêt en commentaire.
 - **La fête des mères** est détectée automatiquement (dernier dimanche de mai en France) et affiche `MESSAGE_FETE_DES_MERES`.
-- **Les fleurs** : `data/fleurs.js`. Chaque fleur a un champ `wiki` qui doit correspondre au titre exact d'une page Wikipédia en français : c'est de là que vient la photo.
+- **Les fleurs** : `data/fleurs.js`. Chaque fleur a un champ `etymologie` qui raconte l'origine de son nom. Chaque fleur a un champ `wiki` qui doit correspondre au titre exact d'une page Wikipédia en français : c'est de là que vient la photo.
 - **Les couleurs** : en haut de `style.css`, dans `:root`.
 
 ## Tester une autre date
