@@ -15,6 +15,59 @@
 <body>
   <div class="petales" aria-hidden="true"></div>
 
+
+  <div class="mascotte" id="mascotte" title="Coucou, c'est Pompon !">
+    <div class="bulle" id="bulle"></div>
+    <svg class="lapin" viewBox="0 0 200 232" xmlns="http://www.w3.org/2000/svg" aria-label="Pompon le lapin" role="img">
+      <ellipse class="ombre" cx="100" cy="225" rx="58" ry="6"/>
+      <g class="corps">
+        <!-- oreilles -->
+        <g class="oreille oreille-g">
+          <ellipse cx="72" cy="58" rx="16" ry="48" transform="rotate(-12 72 58)"/>
+          <ellipse class="oreille-int" cx="72" cy="60" rx="8" ry="36" transform="rotate(-12 72 60)"/>
+        </g>
+        <g class="oreille oreille-d">
+          <ellipse cx="128" cy="58" rx="16" ry="48" transform="rotate(12 128 58)"/>
+          <ellipse class="oreille-int" cx="128" cy="60" rx="8" ry="36" transform="rotate(12 128 60)"/>
+        </g>
+        <!-- corps et pattes -->
+        <ellipse class="peau" cx="100" cy="190" rx="48" ry="34"/>
+        <ellipse class="ventre" cx="100" cy="198" rx="26" ry="20"/>
+        <ellipse class="peau" cx="72" cy="219" rx="19" ry="9"/>
+        <ellipse class="peau" cx="128" cy="219" rx="19" ry="9"/>
+        <g class="patte patte-g">
+          <ellipse class="peau" cx="68" cy="186" rx="11" ry="15" transform="rotate(20 68 186)"/>
+        </g>
+        <g class="patte patte-d">
+          <path class="tige" d="M132 182 C140 168 146 154 152 140"/>
+          <path class="feuille" d="M143 162 C150 158 158 160 160 168 C152 170 146 168 143 162 Z"/>
+          <path class="tulipe" d="M139 142 C137 124 149 120 152 130 C155 120 167 124 165 142 C161 150 143 150 139 142 Z"/>
+          <ellipse class="peau" cx="132" cy="186" rx="11" ry="15" transform="rotate(-20 132 186)"/>
+        </g>
+        <!-- tête -->
+        <circle class="peau" cx="100" cy="120" r="56"/>
+        <ellipse class="joue" cx="64" cy="138" rx="11" ry="7"/>
+        <ellipse class="joue" cx="136" cy="138" rx="11" ry="7"/>
+        <g class="oeil"><circle cx="80" cy="118" r="6.5"/><circle class="reflet" cx="78" cy="115.5" r="2.2"/></g>
+        <g class="oeil"><circle cx="120" cy="118" r="6.5"/><circle class="reflet" cx="118" cy="115.5" r="2.2"/></g>
+        <path class="nez" d="M94.5 131 h11 a1.5 1.5 0 0 1 1.2 2.4 l-5.5 6.2 a1.6 1.6 0 0 1 -2.4 0 l-5.5 -6.2 a1.5 1.5 0 0 1 1.2 -2.4 Z"/>
+        <path class="bouche" d="M100 139.5 q-4 7 -9 2.5 M100 139.5 q4 7 9 2.5"/>
+        <g class="moustaches">
+          <path d="M58 128 L78 132 M58 138 L78 136"/>
+          <path d="M142 128 L122 132 M142 138 L122 136"/>
+        </g>
+        <!-- petite fleur sur l'oreille -->
+        <g class="barrette">
+          <circle cx="60" cy="86" r="3.2" transform="rotate(0 60 92)"/>
+          <circle cx="60" cy="98" r="3.2"/>
+          <circle cx="54" cy="92" r="3.2"/>
+          <circle cx="66" cy="92" r="3.2"/>
+          <circle class="coeur" cx="60" cy="92" r="2.6"/>
+        </g>
+      </g>
+    </svg>
+  </div>
+
   <main class="page">
     <section class="carte message-carte" id="message-section">
       <p class="date" id="date-du-jour"></p>

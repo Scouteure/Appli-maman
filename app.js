@@ -144,6 +144,106 @@
     chargerPhoto(fleur);
   }
 
+  // --- Pompon, le lapin qui présente les fleurs ---
+  function nomAvecArticle(fleur) {
+    var nom = fleur.nom.replace(/\s*\(.*\)$/, "");
+    if (/^[aeiouyhéèêœ]/i.test(nom)) return "l'" + nom.charAt(0).toLowerCase() + nom.slice(1);
+    return (fleur.genre === "m" ? "le " : "la ") + nom.charAt(0).toLowerCase() + nom.slice(1);
+  }
+
+  function minuscule(texte) { return texte.charAt(0).toLowerCase() + texte.slice(1); }
+
+  function premierePhrase(texte) {
+    var m = texte.match(/^[^.!?]+[.!?]/);
+    return m ? m[0] : texte;
+  }
+
+  function mascotte(fleur, boutonFleur) {
+    var el = document.getElementById("mascotte");
+    var bulle = document.getElementById("bulle");
+    if (!el || !bulle) return;
+
+    var minuteur = null;
+    var file = [];
+
+    function dire(texte, duree) {
+      bulle.textContent = texte;
+      bulle.classList.add("visible");
+      clearTimeout(minuteur);
+      minuteur = setTimeout(function () { bulle.classList.remove("visible"); }, duree || 6000);
+    }
+
+    function animer(classe) {
+      el.classList.remove(classe);
+      void el.offsetWidth; // relance l'animation
+      el.classList.add(classe);
+    }
+
+    el.addEventListener("animationend", function (e) {
+      if (e.animationName === "saute") el.classList.remove("saute");
+      if (e.animationName === "coucou") el.classList.remove("coucou");
+    });
+
+    // Fait défiler une série de phrases, l'une après l'autre.
+    function raconter(phrases, pause) {
+      file = phrases.slice();
+      clearTimeout(minuteur);
+      (function suivante() {
+        if (!file.length) { minuteur = setTimeout(function () { bulle.classList.remove("visible"); }, pause); return; }
+        bulle.textContent = file.shift();
+        bulle.classList.add("visible");
+        minuteur = setTimeout(suivante, pause);
+      })();
+    }
+
+    var pronom = fleur.genre === "m" ? "Il" : "Elle";
+    var article = nomAvecArticle(fleur);
+    var presentation = [
+      "Aujourd'hui, je te présente " + article + " ! 🌸",
+      "Floraison : " + minuscule(fleur.floraison) + ".",
+      pronom + " aime : " + minuscule(fleur.exposition) + ".",
+      "Pour l'arrosage : " + minuscule(fleur.arrosage) + ".",
+      "Mon petit conseil : " + fleur.conseil,
+      "Tu savais ? " + premierePhrase(fleur.etymologie),
+    ];
+
+    var bavardages = [
+      "Tu es la meilleure maman du monde ! 💕",
+      "Moi aussi je t'aime fort !",
+      "J'ai planté une carotte à côté de " + article + "… chut !",
+      "Tu savais ? " + premierePhrase(fleur.etymologie),
+      "Dans le langage des fleurs, " + article + ", c'est : " + minuscule(fleur.symbole) + ".",
+      "Mon conseil du jour : " + fleur.conseil,
+      "Un câlin ? Moi je dis oui ! 🤗",
+      "Demain, je t'en présente une nouvelle. Promis !",
+      "Je surveille ton jardin, ne t'inquiète pas. 🥕",
+      "Je trouve que tu as le plus beau jardin du monde.",
+    ];
+    var dernier = -1;
+
+    // Arrivée : petit coucou.
+    setTimeout(function () {
+      animer("coucou");
+      raconter(["Coucou ! Moi c'est Pompon 🐰", "Clique sur le bouton, j'ai une fleur à te montrer !"], 4500);
+    }, 1300);
+
+    // Quand la fleur apparaît : il saute et la présente.
+    boutonFleur.addEventListener("click", function () {
+      animer("saute");
+      setTimeout(function () { raconter(presentation, 7000); }, 500);
+    });
+
+    // Quand on clique sur lui : il saute et bavarde.
+    el.addEventListener("click", function () {
+      animer("saute");
+      var i;
+      do { i = Math.floor(Math.random() * bavardages.length); } while (i === dernier && bavardages.length > 1);
+      dernier = i;
+      file = [];
+      dire(bavardages[i], 7000);
+    });
+  }
+
   function petales() {
     var conteneur = document.querySelector(".petales");
     if (!conteneur) return;
@@ -181,6 +281,7 @@
     });
 
     petales();
+    mascotte(fleur, bouton);
   }
 
   document.addEventListener("DOMContentLoaded", init);

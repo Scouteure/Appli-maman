@@ -248,9 +248,128 @@ body {
   100% { transform: translateY(110vh) rotate(360deg); }
 }
 
+/* --- Pompon, la mascotte --- */
+.mascotte {
+  position: fixed;
+  left: 32px;
+  bottom: 10px;
+  width: 215px;
+  z-index: 5;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  animation: arrivee 0.9s cubic-bezier(.2,.9,.3,1.2) both;
+  animation-delay: 0.4s;
+}
+@keyframes arrivee {
+  from { transform: translateY(120%); }
+  to   { transform: translateY(0); }
+}
+.lapin { width: 100%; height: auto; display: block; overflow: visible; }
+.lapin .ombre { fill: rgba(120, 60, 80, 0.12); }
+.lapin .peau { fill: #fffafb; stroke: #e6cdd4; stroke-width: 2.2; }
+.lapin .oreille ellipse:first-child { fill: #fffafb; stroke: #e6cdd4; stroke-width: 2.2; }
+.lapin .oreille-int { fill: #f9c4d2; stroke: none; }
+.lapin .ventre { fill: #fdeef2; }
+.lapin .joue { fill: #f9b9c9; opacity: 0.75; }
+.lapin .oeil circle { fill: #3b2a30; }
+.lapin .oeil .reflet { fill: #fff; }
+.lapin .nez { fill: #ec8fa8; }
+.lapin .bouche { fill: none; stroke: #b86f85; stroke-width: 2; stroke-linecap: round; }
+.lapin .moustaches path { stroke: #d9bcc5; stroke-width: 1.6; stroke-linecap: round; }
+.lapin .tige { fill: none; stroke: #6f9e7a; stroke-width: 3.5; stroke-linecap: round; }
+.lapin .feuille { fill: #8fbf98; }
+.lapin .tulipe { fill: #f06292; }
+.lapin .barrette circle { fill: #fff; stroke: #f3c0cd; stroke-width: 1; }
+.lapin .barrette .coeur { fill: #ffd166; stroke: none; }
+
+.lapin .corps {
+  transform-box: fill-box;
+  transform-origin: 50% 100%;
+  animation: respire 3.2s ease-in-out infinite;
+}
+@keyframes respire {
+  0%, 100% { transform: translateY(0) scale(1, 1); }
+  50%      { transform: translateY(-3px) scale(1.012, 0.985); }
+}
+.lapin .oreille {
+  transform-box: fill-box;
+  transform-origin: 50% 95%;
+  animation: oreille 4.5s ease-in-out infinite;
+}
+.lapin .oreille-d { animation-delay: 0.7s; }
+@keyframes oreille {
+  0%, 78%, 100% { transform: rotate(0deg); }
+  84%           { transform: rotate(-9deg); }
+  92%           { transform: rotate(6deg); }
+}
+.lapin .oeil {
+  transform-box: fill-box;
+  transform-origin: 50% 50%;
+  animation: cligne 5.5s infinite;
+}
+@keyframes cligne {
+  0%, 93%, 100% { transform: scaleY(1); }
+  96%           { transform: scaleY(0.08); }
+}
+.lapin .patte { transform-box: fill-box; }
+.lapin .patte-d { transform-origin: 20% 90%; }
+.mascotte.coucou .patte-d { animation: coucou 0.7s ease-in-out 3; }
+@keyframes coucou {
+  0%, 100% { transform: rotate(0deg); }
+  50%      { transform: rotate(-32deg) translate(-6px, -10px); }
+}
+.mascotte.saute .corps { animation: saute 0.8s cubic-bezier(.3,.7,.4,1); }
+@keyframes saute {
+  0%   { transform: translateY(0) scale(1, 1); }
+  12%  { transform: translateY(4px) scale(1.06, 0.9); }
+  40%  { transform: translateY(-46px) scale(0.96, 1.06) rotate(-3deg); }
+  65%  { transform: translateY(0) scale(1.04, 0.94); }
+  80%  { transform: translateY(-12px) scale(1, 1); }
+  100% { transform: translateY(0) scale(1, 1); }
+}
+.mascotte:hover .lapin .corps { animation-duration: 1.6s; }
+
+.bulle {
+  position: absolute;
+  left: 24px;
+  bottom: calc(100% - 4px);
+  width: 250px;
+  background: #fff;
+  border-radius: 20px;
+  padding: 12px 16px 13px;
+  font-family: "Caveat", cursive;
+  font-weight: 500;
+  font-size: 1.35rem;
+  line-height: 1.2;
+  color: var(--rose-fonce);
+  box-shadow: 0 10px 30px rgba(201, 80, 122, 0.18);
+  opacity: 0;
+  transform: translateY(10px) scale(0.94);
+  transform-origin: 20% 100%;
+  transition: opacity 0.3s ease, transform 0.3s cubic-bezier(.2,.9,.3,1.2);
+  pointer-events: none;
+}
+.bulle.visible { opacity: 1; transform: translateY(0) scale(1); }
+.bulle::after {
+  content: "";
+  position: absolute;
+  left: 34px;
+  bottom: -11px;
+  border: 12px solid transparent;
+  border-top-color: #fff;
+  border-bottom: 0;
+  border-left-width: 6px;
+}
+
+@media (max-width: 900px) {
+  .mascotte { display: none; }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .petale { display: none; }
   .carte { animation: none; }
+  .mascotte, .lapin .corps, .lapin .oreille, .lapin .oeil { animation: none; }
 }
 
 @media (min-width: 520px) {
