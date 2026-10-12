@@ -1,0 +1,32 @@
+# Télécharge depuis Wikipédia les photos de fleurs manquantes (depuis les serveurs de GitHub)
+# et les ajoute au dépôt. Se lance à la main (onglet Actions → Run workflow) ou à chaque
+# modification de ce fichier.
+name: Compléter les photos des fleurs
+
+on:
+  workflow_dispatch:
+  push:
+    paths: [".github/workflows/photos.yml"]
+
+permissions:
+  contents: write
+
+jobs:
+  photos:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install pillow
+      - run: python3 outils/telecharger_photos.py
+        continue-on-error: true
+      - name: Commit des photos
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/
+          git diff --cached --quiet && echo "Aucune nouvelle photo" && exit 0
+          git commit -m "Ajoute des photos de fleurs téléchargées automatiquement"
+          git push
