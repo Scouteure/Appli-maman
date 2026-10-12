@@ -55,6 +55,7 @@ window.FLEURS = [
   },
   {
     nom: "Hortensia", latin: "Hydrangea macrophylla", wiki: "Hydrangea macrophylla", emoji: "💙",
+    photo: "data/photos/hortensia.jpg", credit: "Hydrangea_macrophylla_SZ53.png",
     genre: "m",
     photo: "data/photos/hortensia.jpg", credit: "Hydrangea_macrophylla_SZ53.png",
     description: "L'hortensia forme de gros pompons bleus, roses ou blancs qui durent tout l'été. La couleur de ses fleurs dépend de l'acidité du sol : bleu en terre acide, rose en terre calcaire.",
@@ -69,6 +70,7 @@ window.FLEURS = [
   },
   {
     nom: "Dahlia", latin: "Dahlia", wiki: "Dahlia", emoji: "🌺",
+    photo: "data/photos/dahlia.jpg", credit: "Erntedank_Dahlie_Engelhardt.JPG",
     genre: "m",
     photo: "data/photos/dahlia.jpg", credit: "Erntedank_Dahlie_Engelhardt.JPG",
     description: "Originaire du Mexique, le dahlia est le roi des massifs de fin d'été, avec des fleurs de toutes tailles, du pompon au géant de 25 cm, dans des coloris flamboyants.",
@@ -83,6 +85,7 @@ window.FLEURS = [
   },
   {
     nom: "Jasmin", latin: "Jasminum officinale", wiki: "Jasminum officinale", emoji: "🤍",
+    photo: "data/photos/jasmin.jpg", credit: "Jasminum_officinale_-_Bot._Mag._31,_1787.jpg",
     genre: "m",
     photo: "data/photos/jasmin.jpg", credit: "Jasminum_officinale_-_Bot._Mag._31,_1787.jpg",
     description: "Grimpante au parfum envoûtant, le jasmin blanc embaume les soirées d'été. Il habille joliment un treillage, une pergola ou un mur bien exposé.",
@@ -97,6 +100,7 @@ window.FLEURS = [
   },
   {
     nom: "Tournesol", latin: "Helianthus annuus", wiki: "Tournesol", emoji: "🌻",
+    photo: "data/photos/tournesol.jpg", credit: "Helianthus_annuus_0001.JPG",
     genre: "m",
     photo: "data/photos/tournesol.jpg", credit: "Helianthus_annuus_0001.JPG",
     description: "Le tournesol suit le soleil dans sa course et peut dépasser 3 mètres de haut. Ses grands capitules jaunes nourrissent les abeilles, puis les oiseaux en automne.",
@@ -111,6 +115,7 @@ window.FLEURS = [
   },
   {
     nom: "Lilas", latin: "Syringa vulgaris", wiki: "Lilas commun", emoji: "💐",
+    photo: "data/photos/lilas.jpg", credit: "Lilac_(2).jpg",
     genre: "m",
     photo: "data/photos/lilas.jpg", credit: "Lilac_(2).jpg",
     description: "Le lilas annonce le vrai printemps avec ses grappes parfumées mauves, blanches ou pourpres. Arbuste robuste et peu exigeant, il vit très longtemps.",
@@ -125,6 +130,7 @@ window.FLEURS = [
   },
   {
     nom: "Camélia", latin: "Camellia japonica", wiki: "Camellia japonica", emoji: "🌸",
+    photo: "data/photos/camelia.jpg", credit: "Camellia_japonica_'Pink_Perfection'.jpg",
     genre: "m",
     photo: "data/photos/camelia.jpg", credit: "Camellia_japonica_'Pink_Perfection'.jpg",
     description: "Le camélia fleurit en plein hiver, quand le jardin semble endormi. Ses fleurs rondes, parfaites, se détachent sur un feuillage vernissé et persistant.",
@@ -139,6 +145,7 @@ window.FLEURS = [
   },
   {
     nom: "Iris", latin: "Iris germanica", wiki: "Iris (plante)", emoji: "💙",
+    photo: "data/photos/iris.jpg", credit: "Eriskircher_Ried_037-2.jpg",
     genre: "m",
     photo: "data/photos/iris.jpg", credit: "Eriskircher_Ried_037-2.jpg",
     description: "L'iris des jardins déploie des fleurs sophistiquées aux pétales dressés et retombants, souvent bicolores. Ses rhizomes se multiplient facilement d'année en année.",
@@ -153,6 +160,7 @@ window.FLEURS = [
   },
   {
     nom: "Géranium (Pélargonium)", latin: "Pelargonium", wiki: "Pelargonium", emoji: "🌺",
+    photo: "data/photos/geranium-pelargonium.jpg", credit: "Pelargonium_capitatum_flickrWright.jpg",
     genre: "m",
     photo: "data/photos/geranium-pelargonium.jpg", credit: "Pelargonium_capitatum_flickrWright.jpg",
     description: "Le pélargonium, qu'on appelle géranium des balcons, fleurit sans interruption tout l'été. Zonale, lierre ou odorant, il est la star des jardinières.",
@@ -193,6 +201,7 @@ window.FLEURS = [
   },
   {
     nom: "Jonquille", latin: "Narcissus", wiki: "Narcisse jaune", emoji: "🌼",
+    photo: "data/photos/jonquille.jpg", credit: "Narcissus_pseudonarcissus1.jpg",
     description: "Les jonquilles et narcisses sont parmi les premières fleurs du printemps. Leurs trompettes jaunes ou blanches reviennent fidèlement chaque année et se naturalisent dans la pelouse.",
     etymologie: "« Narcissus » vient du grec « narkê », la torpeur, dont vient aussi « narcotique » : Pline attribuait à la fleur des vertus engourdissantes. Le mythe de Narcisse s'y est greffé ensuite. « Jonquille » vient de l'espagnol « junquillo », petit jonc, pour ses feuilles fines.",
     floraison: "Février à avril",
@@ -205,6 +214,7 @@ window.FLEURS = [
   },
   {
     nom: "Glycine", latin: "Wisteria sinensis", wiki: "Wisteria sinensis", emoji: "💜",
+    photo: "data/photos/glycine.jpg", credit: "Wisteria_sinensis,_Gibraltar.JPG",
     description: "La glycine est une grimpante spectaculaire aux longues grappes mauves parfumées qui retombent en cascade. Très vigoureuse, elle peut couvrir toute une façade.",
     etymologie: "« Wisteria » fut créé en 1818 par Thomas Nuttall en hommage à Caspar Wistar, anatomiste de Philadelphie, avec une orthographe fautive restée dans l'usage. « Glycine » vient du grec « glukus », doux, sucré, nom d'abord donné à une plante voisine. « Sinensis » : « de Chine ».",
     floraison: "Avril à mai, parfois une seconde floraison légère en été",
@@ -217,6 +227,7 @@ window.FLEURS = [
   },
   {
     nom: "Œillet", latin: "Dianthus caryophyllus", wiki: "Œillet commun", emoji: "🌸",
+    photo: "data/photos/illet.jpg", credit: "Dianthus_caryophyllus_L_(Clove_pink).JPG",
     genre: "m",
     description: "L'œillet au parfum de clou de girofle est une fleur classique des jardins de grand-mère. Les œillets mignardises forment de jolis coussins de feuillage bleuté.",
     etymologie: "« Dianthus », du grec « Dios » (de Zeus) et « anthos » (fleur) : « la fleur de Zeus », nom donné par Théophraste. « Caryophyllus » rappelle le « karuophullon », le clou de girofle, pour son parfum. « Œillet » est simplement un petit œil, pour la fleur ronde.",
@@ -230,6 +241,7 @@ window.FLEURS = [
   },
   {
     nom: "Magnolia", latin: "Magnolia × soulangeana", wiki: "Magnolia × soulangeana", emoji: "🌸",
+    photo: "data/photos/magnolia.jpg", credit: "Magnolia_x_soulangeana_'Rustica_Rubra'_flower_by_Line1.jpg",
     genre: "m",
     description: "Le magnolia de Soulange est un arbre d'exception : ses grandes fleurs en forme de tulipe, roses et blanches, s'ouvrent avant les feuilles, au tout début du printemps.",
     etymologie: "Nommé en 1703 par Charles Plumier en l'honneur de Pierre Magnol, botaniste de Montpellier, inventeur de la notion de famille en botanique. « Soulangeana » honore Étienne Soulange-Bodin, qui créa cet hybride vers 1820 dans son domaine de Fromont, près de Paris.",
@@ -243,6 +255,7 @@ window.FLEURS = [
   },
   {
     nom: "Cosmos", latin: "Cosmos bipinnatus", wiki: "Cosmos bipinnatus", emoji: "🌸",
+    photo: "data/photos/cosmos.jpg", credit: "Cosmos_bipinnatus4.jpg",
     genre: "m",
     description: "Légère et aérienne, cette annuelle produit des nuées de fleurs roses, blanches ou pourpres sur un feuillage finement découpé. Elle se ressème toute seule.",
     etymologie: "Du grec « kosmos », qui signifie à la fois l'ordre, l'harmonie et la parure (d'où « cosmétique »). L'abbé Cavanilles le nomma ainsi en 1791 pour la régularité parfaite de ses pétales. « Bipinnatus » décrit ses feuilles deux fois divisées.",
@@ -256,6 +269,7 @@ window.FLEURS = [
   },
   {
     nom: "Lys", latin: "Lilium", wiki: "Lilium", emoji: "🤍",
+    photo: "data/photos/lys.jpg", credit: "Lilium_longiflorum.jpg",
     genre: "m",
     description: "Majestueux, le lys dresse ses grandes fleurs en trompette au parfum puissant. Les lys asiatiques, orientaux ou hybrides offrent des coloris très variés.",
     etymologie: "« Lilium » en latin vient du grec « leirion », mot sans doute antérieur au grec, peut-être apparenté à l'égyptien « hrr-t ». La « fleur de lys » héraldique est probablement un iris stylisé plutôt qu'un vrai lys.",
@@ -269,6 +283,7 @@ window.FLEURS = [
   },
   {
     nom: "Capucine", latin: "Tropaeolum majus", wiki: "Grande capucine", emoji: "🧡",
+    photo: "data/photos/capucine.jpg", credit: "Tropaeolum_majus.JPG",
     description: "La capucine aux fleurs orange, jaunes ou rouges est facile et généreuse. Ses fleurs et ses feuilles se mangent en salade, avec un petit goût poivré.",
     etymologie: "« Tropaeolum » vient du grec « tropaion », le trophée : Linné voyait dans les feuilles rondes des boucliers et dans les fleurs des casques ensanglantés suspendus à un trophée de guerre. « Capucine » vient de l'éperon de la fleur, pareil au capuchon des moines capucins.",
     floraison: "Juin jusqu'aux gelées",
@@ -281,6 +296,7 @@ window.FLEURS = [
   },
   {
     nom: "Rhododendron", latin: "Rhododendron", wiki: "Rhododendron", emoji: "💗",
+    photo: "data/photos/rhododendron.jpg", credit: "Flore_des_serres_v14_089a.jpg",
     genre: "m",
     description: "Arbuste persistant à la floraison spectaculaire, le rhododendron se couvre de gros bouquets de fleurs roses, rouges, blanches ou violettes au printemps.",
     etymologie: "Du grec « rhodon » (rose) et « dendron » (arbre) : « l'arbre à roses ». Dioscoride désignait ainsi, en réalité, le laurier-rose. Le nom fut transféré par Linné à ce genre venu des montagnes d'Asie.",
@@ -294,6 +310,7 @@ window.FLEURS = [
   },
   {
     nom: "Muguet", latin: "Convallaria majalis", wiki: "Muguet de mai", emoji: "🤍",
+    photo: "data/photos/muguet.jpg", credit: "Convallaria_majalis_inflorescence_-_Keila.jpg",
     genre: "m",
     description: "Le muguet du 1er mai forme un tapis de clochettes blanches au parfum délicat sous les arbres. Discret et vivace, il s'étend d'année en année.",
     etymologie: "« Convallaria » vient du latin « convallis », la vallée, d'où « lis des vallées » (lily of the valley en anglais) ; « majalis » signifie « de mai ». « Muguet » dérive de « musc » : en ancien français, « muguette » désignait la noix muscade, et la fleur fut nommée pour son parfum.",
@@ -307,6 +324,7 @@ window.FLEURS = [
   },
   {
     nom: "Agapanthe", latin: "Agapanthus", wiki: "Agapanthus", emoji: "💙",
+    photo: "data/photos/agapanthe.jpg", credit: "Agapanthus5.JPG",
     description: "L'agapanthe dresse de grandes ombelles bleues ou blanches au bout de longues tiges, au-dessus d'un feuillage en rubans. Elle est magnifique en pot sur une terrasse.",
     etymologie: "Du grec « agapê » (l'amour, la tendresse) et « anthos » (fleur) : « la fleur de l'amour ». Le nom fut créé en 1788 par L'Héritier de Brutelle pour cette plante venue du cap de Bonne-Espérance.",
     floraison: "Juillet à août",
@@ -319,6 +337,7 @@ window.FLEURS = [
   },
   {
     nom: "Pensée", latin: "Viola × wittrockiana", wiki: "Pensée (plante)", emoji: "💜",
+    photo: "data/photos/pensee.jpg", credit: "Viola_odorata1.jpg",
     description: "La pensée aux petits visages colorés fleurit quand presque rien d'autre ne fleurit : en automne, en hiver doux et au début du printemps.",
     etymologie: "« Viola » est le nom latin de la violette, apparenté au grec « ion ». « Pensée » vient de l'usage d'offrir la fleur en souvenir, comme un « pensez à moi ». « Wittrockiana » honore Veit Wittrock, botaniste suédois qui retraça l'histoire de ces hybrides. On l'appelait aussi « herbe de la Trinité » pour ses trois couleurs.",
     floraison: "Octobre à mai",
@@ -331,6 +350,7 @@ window.FLEURS = [
   },
   {
     nom: "Bleuet", latin: "Centaurea cyanus", wiki: "Centaurea cyanus", emoji: "💙",
+    photo: "data/photos/bleuet.jpg", credit: "163_Centaurea_cyanus_L.jpg",
     genre: "m",
     description: "Fleur des champs d'un bleu intense, le bleuet apporte une touche champêtre et attire les pollinisateurs. Il se ressème généreusement.",
     etymologie: "« Centaurea » rappelle le centaure Chiron, qui aurait soigné avec cette plante la blessure faite par une flèche d'Hercule. « Cyanus » vient du grec « kuanos », le bleu sombre. On l'appelait aussi « casse-lunettes », car son eau était réputée pour les yeux.",
@@ -344,6 +364,7 @@ window.FLEURS = [
   },
   {
     nom: "Coquelicot", latin: "Papaver rhoeas", wiki: "Papaver rhoeas", emoji: "❤️",
+    photo: "data/photos/coquelicot.jpg", credit: "Fleur_de_Coquelicot_(Papaver_rhoeas).jpg",
     genre: "m",
     description: "Le coquelicot et ses pétales rouges comme de la soie froissée illumine les talus et les champs. Chaque fleur ne dure qu'un jour, mais elles se succèdent sans fin.",
     etymologie: "« Papaver » est le nom latin du pavot, peut-être lié à « papa », la bouillie des enfants, à laquelle on ajoutait son suc pour les endormir. « Rhoeas » vient du grec « rhein », couler, tomber, car les pétales tombent vite. « Coquelicot » est une onomatopée du chant du coq, pour le rouge de sa crête.",
@@ -357,6 +378,7 @@ window.FLEURS = [
   },
   {
     nom: "Hellébore (Rose de Noël)", latin: "Helleborus niger", wiki: "Helleborus niger", emoji: "🤍",
+    photo: "data/photos/hellebore-rose-de-noel.jpg", credit: "Illustration_Helleborus_niger0.jpg",
     genre: "m",
     description: "La rose de Noël fleurit en plein hiver, souvent sous la neige. Ses fleurs blanches ou rosées, tournées vers le sol, sont une merveille de résistance.",
     etymologie: "Du grec « helleboros », peut-être de « helein » (faire périr) et « bora » (nourriture) : « la nourriture qui tue », car la plante est très toxique. « Niger », noir, ne désigne pas la fleur mais ses racines. Dans l'Antiquité, l'hellébore passait pour guérir la folie.",
@@ -370,6 +392,7 @@ window.FLEURS = [
   },
   {
     nom: "Gaura", latin: "Gaura lindheimeri", wiki: "Oenothera lindheimeri", emoji: "🤍",
+    photo: "data/photos/gaura.jpg", credit: "(MHNT)_Oenothera_lindheimeri.jpg",
     genre: "m",
     description: "Le gaura fait voler ses petites fleurs blanches ou roses comme des papillons sur de longues tiges souples. Il fleurit sans arrêt pendant des mois.",
     etymologie: "« Gaura » vient du grec « gauros », superbe, fier. Les botanistes l'ont récemment rattachée au genre « Oenothera », de « oinos » (vin) et « thêr » (bête sauvage), nom antique d'une plante dont la racine sentait le vin. « Lindheimeri » honore Ferdinand Lindheimer, botaniste allemand installé au Texas.",
@@ -383,6 +406,7 @@ window.FLEURS = [
   },
   {
     nom: "Fuchsia", latin: "Fuchsia", wiki: "Fuchsia", emoji: "💗",
+    photo: "data/photos/fuchsia.jpg", credit: "Fuchsia_regia_-_blossom_(aka).jpg",
     genre: "m",
     description: "Les clochettes bicolores du fuchsia, roses, rouges et violettes, pendent comme de petites danseuses. Il adore les coins ombragés et frais.",
     etymologie: "Nommé en 1703 par le père Charles Plumier en hommage à Leonhart Fuchs, botaniste allemand du XVIe siècle et auteur d'un herbier célèbre, le « De historia stirpium » (1542). La couleur fuchsia tire son nom de la fleur, et non l'inverse.",
@@ -396,6 +420,7 @@ window.FLEURS = [
   },
   {
     nom: "Chrysanthème", latin: "Chrysanthemum", wiki: "Chrysanthème", emoji: "🧡",
+    photo: "data/photos/chrysantheme.jpg", credit: "Chrysanthemums.jpg",
     genre: "m",
     description: "Loin de n'être qu'une fleur de Toussaint, le chrysanthème offre une floraison généreuse en automne, quand le jardin se dégarnit, dans des tons chauds et lumineux.",
     etymologie: "Du grec « chrusos » (or) et « anthemon » (fleur) : « la fleur d'or », car les premiers chrysanthèmes étaient jaunes. Au Japon, le « kiku » est l'emblème de la famille impériale, et le trône lui-même se nomme « trône du chrysanthème ».",
@@ -409,6 +434,7 @@ window.FLEURS = [
   },
   {
     nom: "Anémone du Japon", latin: "Anemone hupehensis", wiki: "Anemone hupehensis", emoji: "🌸",
+    photo: "data/photos/anemone-du-japon.jpg", credit: "'Anemone_hupehensis'_Capel_Manor_Gardens_Enfield_London_England_2.jpg",
     description: "L'anémone du Japon fleurit en fin d'été avec des fleurs simples, roses ou blanches, à cœur doré, qui dansent au-dessus du feuillage. Très élégante et facile.",
     etymologie: "« Anemone » vient du grec « anemos », le vent : « la fille du vent », car Pline croyait que la fleur ne s'ouvrait que sous son souffle. « Hupehensis » signifie « du Hubei », la province chinoise où Robert Fortune la découvrit au XIXe siècle. Malgré son nom, elle est chinoise.",
     floraison: "Août à octobre",
@@ -421,6 +447,7 @@ window.FLEURS = [
   },
   {
     nom: "Primevère", latin: "Primula vulgaris", wiki: "Primula vulgaris", emoji: "🌼",
+    photo: "data/photos/primevere.jpg", credit: "Bollettino_tecnico_(1919-1921)_(20398542031).jpg",
     description: "La primevère est, comme son nom l'indique, l'une des premières à fleurir. Ses rosettes de fleurs colorées égaient les bordures dès la fin de l'hiver.",
     etymologie: "« Primula » est un diminutif du latin « primus » : « la toute première » fleur de l'année. « Primevère » vient de « prima vera », le premier printemps, le mot que l'italien a gardé pour désigner la saison. « Vulgaris » : « commune ».",
     floraison: "Février à mai",
@@ -433,6 +460,7 @@ window.FLEURS = [
   },
   {
     nom: "Bougainvillier", latin: "Bougainvillea", wiki: "Bougainvillea", emoji: "💗",
+    photo: "data/photos/bougainvillier.jpg", credit: "Bougainvillea_spectabilis_Flowers_Closeup2_TorreLaMata.jpg",
     genre: "m",
     description: "Le bougainvillier éclabousse les murs du Midi de ses bractées fuchsia, orange ou blanches. Hors climat doux, on le cultive en pot et on le rentre l'hiver.",
     etymologie: "Philibert Commerson la nomma en l'honneur de Louis-Antoine de Bougainville, chef de l'expédition autour du monde (1766-1769) au cours de laquelle elle fut découverte au Brésil. C'est sans doute Jeanne Barret, compagne de Commerson déguisée en homme, qui la récolta : elle fut la première femme à faire le tour du monde.",
@@ -446,6 +474,7 @@ window.FLEURS = [
   },
   {
     nom: "Lupin", latin: "Lupinus", wiki: "Lupin", emoji: "💜",
+    photo: "data/photos/lupin.jpg", credit: "Illustration_Lupinus_luteus1.jpg",
     genre: "m",
     description: "Le lupin dresse de hauts épis colorés, bleus, roses, jaunes ou bicolores, au-dessus d'un feuillage en étoile. Il enrichit le sol en azote.",
     etymologie: "Du latin « lupus », le loup : on croyait que la plante « dévorait » la fertilité du sol parce qu'elle pousse sur les terres pauvres. C'est l'inverse qui est vrai : comme toutes les légumineuses, elle enrichit la terre en azote.",
@@ -459,6 +488,7 @@ window.FLEURS = [
   },
   {
     nom: "Zinnia", latin: "Zinnia elegans", wiki: "Zinnia elegans", emoji: "🧡",
+    photo: "data/photos/zinnia.jpg", credit: "Zinnia_elegans_01.jpg",
     genre: "m",
     description: "Le zinnia est une annuelle facile aux fleurs rondes et vives, parfaites pour les bouquets. Il résiste très bien à la chaleur.",
     etymologie: "Linné le nomma en l'honneur de Johann Gottfried Zinn, médecin et botaniste allemand du XVIIIe siècle, par ailleurs anatomiste de l'œil : la « zonule de Zinn » porte aussi son nom. « Elegans » : « élégant ».",
@@ -472,6 +502,7 @@ window.FLEURS = [
   },
   {
     nom: "Pois de senteur", latin: "Lathyrus odoratus", wiki: "Pois de senteur", emoji: "💗",
+    photo: "data/photos/pois-de-senteur.jpg", credit: "Lathyrus_odoratus_Painted_Lady.jpg",
     genre: "m",
     description: "Grimpante annuelle au parfum délicieux, le pois de senteur grimpe sur un grillage ou un tipi de bambous. Ses fleurs pastel font des bouquets charmants.",
     etymologie: "« Lathyrus » est le nom grec d'une légumineuse chez Théophraste ; « odoratus » signifie « odorant ». C'est un moine sicilien, Francesco Cupani, qui envoya ses graines en Angleterre en 1699, d'où partit son immense succès horticole.",
@@ -485,6 +516,7 @@ window.FLEURS = [
   },
   {
     nom: "Crocus", latin: "Crocus", wiki: "Crocus", emoji: "💜",
+    photo: "data/photos/crocus.jpg", credit: "Crocus_vernus_albiflorus.jpg",
     genre: "m",
     description: "Le crocus perce la terre encore froide dès février, avec ses petites coupes violettes, jaunes ou blanches. Il se naturalise dans la pelouse.",
     etymologie: "Du grec « krokos », le safran, mot d'origine sémitique (« karkom » en hébreu, « kurkum » en arabe). La mythologie raconte que le jeune Crocus, mort d'amour pour la nymphe Smilax, fut changé en cette fleur.",
@@ -498,6 +530,7 @@ window.FLEURS = [
   },
   {
     nom: "Jacinthe", latin: "Hyacinthus orientalis", wiki: "Hyacinthus orientalis", emoji: "💜",
+    photo: "data/photos/jacinthe.jpg", credit: "Hyacinthus_orientalis_(blue_cultivar)_01.JPG",
     description: "La jacinthe est l'une des fleurs les plus parfumées du printemps. Ses épis compacts et serrés existent dans toutes les couleurs pastel.",
     etymologie: "Du grec « huakinthos », nom d'un jeune homme aimé d'Apollon et tué par un disque ; de son sang naquit la fleur, dont les pétales porteraient les lettres « AI », « hélas ». Le mot est antérieur au grec lui-même. « Orientalis » : « d'Orient ».",
     floraison: "Mars à avril",
@@ -510,6 +543,7 @@ window.FLEURS = [
   },
   {
     nom: "Lavatère", latin: "Lavatera", wiki: "Lavatera", emoji: "💗",
+    photo: "data/photos/lavatere.jpg", credit: "Lavatera-closeup0670.JPG",
     description: "La lavatère arbustive se couvre de grandes fleurs roses en forme d'entonnoir tout l'été. Elle pousse vite et fleurit dès la première année.",
     etymologie: "Tournefort la nomma au début du XVIIIe siècle en l'honneur des frères Lavater, médecins et naturalistes de Zurich. Le genre a depuis été en partie fondu dans « Malva », la mauve.",
     floraison: "Juin à octobre",
@@ -522,6 +556,7 @@ window.FLEURS = [
   },
   {
     nom: "Gardénia", latin: "Gardenia jasminoides", wiki: "Gardenia jasminoides", emoji: "🤍",
+    photo: "data/photos/gardenia.jpg", credit: "Gardenia_jasminoides_flower_Argentina.jpg",
     genre: "m",
     description: "Le gardénia offre des fleurs blanches cireuses au parfum capiteux, sur un feuillage vert brillant. Un peu exigeant, il se cultive surtout en pot.",
     etymologie: "Linné le nomma, sur la suggestion de John Ellis, en l'honneur d'Alexander Garden, médecin et naturaliste écossais installé à Charleston, en Caroline. « Jasminoides » signifie « qui ressemble au jasmin », pour son parfum.",
@@ -535,6 +570,7 @@ window.FLEURS = [
   },
   {
     nom: "Aster", latin: "Aster", wiki: "Aster (plante)", emoji: "💜",
+    photo: "data/photos/aster.jpg", credit: "Aster_Amellus.JPG",
     genre: "m",
     description: "Les asters d'automne forment de gros buissons constellés de petites marguerites mauves, roses ou bleues, très appréciées des papillons en fin de saison.",
     etymologie: "Du grec « astêr », l'étoile, pour la disposition rayonnante de ses pétales. Le mot a donné « astre », « astronomie » et « astérisque », la petite étoile.",
@@ -548,6 +584,7 @@ window.FLEURS = [
   },
   {
     nom: "Bégonia", latin: "Begonia", wiki: "Bégonia", emoji: "🌺",
+    photo: "data/photos/begonia.jpg", credit: "Begonia_scharffii.jpg",
     genre: "m",
     description: "Le bégonia fleurit sans relâche à l'ombre, là où peu de fleurs réussissent. Les bégonias tubéreux offrent de grosses fleurs doubles aux couleurs vives.",
     etymologie: "Charles Plumier le nomma en l'honneur de Michel Bégon, intendant de Saint-Domingue puis de la marine à Rochefort, grand protecteur des botanistes, qui avait financé son voyage aux Antilles en 1689.",
@@ -561,6 +598,7 @@ window.FLEURS = [
   },
   {
     nom: "Rudbeckia", latin: "Rudbeckia fulgida", wiki: "Rudbeckia", emoji: "🌻",
+    photo: "data/photos/rudbeckia.jpg", credit: "Rudbeckia_fulgida_var._sullivantii_'Goldsteinii'_-_blossom_side_(aka).jpg",
     genre: "m",
     description: "Le rudbeckia illumine la fin d'été de ses marguerites jaune d'or à cœur noir. Robuste, il fleurit pendant des semaines sans aucun soin.",
     etymologie: "Linné le dédia à Olof Rudbeck père et fils, ses professeurs à l'université d'Uppsala, qui l'avaient accueilli et soutenu dans sa jeunesse. « Fulgida » signifie « brillante, étincelante ».",
@@ -574,6 +612,7 @@ window.FLEURS = [
   },
   {
     nom: "Delphinium (Pied-d'alouette)", latin: "Delphinium", wiki: "Delphinium", emoji: "💙",
+    photo: "data/photos/delphinium-pied-d-alouette.jpg", credit: "Delphinium_ceratophorum_2.jpg",
     genre: "m",
     description: "Le delphinium dresse de majestueux épis bleu intense, l'un des bleus les plus purs du jardin. C'est la vedette des massifs à l'anglaise.",
     etymologie: "Du grec « delphinion », de « delphis », le dauphin : Dioscoride voyait dans le bouton de fleur la silhouette d'un dauphin. « Pied-d'alouette » vient de l'éperon de la fleur, pareil à la longue griffe arrière de l'oiseau.",
@@ -587,6 +626,7 @@ window.FLEURS = [
   },
   {
     nom: "Sauge ornementale", latin: "Salvia nemorosa", wiki: "Salvia nemorosa", emoji: "💜",
+    photo: "data/photos/sauge-ornementale.jpg", credit: "Woodland_sage-Salvia_nemorosa.jpg",
     description: "La sauge des bois forme des touffes d'épis violets très graphiques qui fleurissent longtemps. Les abeilles et les bourdons l'adorent.",
     etymologie: "« Salvia » vient du latin « salvus », sain et sauf, pour ses vertus médicinales. L'École de Salerne demandait : « Pourquoi mourrait l'homme dans le jardin duquel pousse la sauge ? ». « Nemorosa » signifie « des bois ».",
     floraison: "Mai à septembre",
@@ -599,6 +639,7 @@ window.FLEURS = [
   },
   {
     nom: "Hémérocalle", latin: "Hemerocallis", wiki: "Hemerocallis", emoji: "🧡",
+    photo: "data/photos/hemerocalle.jpg", credit: "Illustration_Hemerocallis_fulva0.jpg",
     description: "Le lys d'un jour ouvre chaque matin une nouvelle fleur qui se fane le soir, mais chaque hampe en porte des dizaines. Une vivace increvable.",
     etymologie: "Du grec « hêmera » (le jour) et « kallos » (la beauté) : « la beauté d'un jour », car chaque fleur ne vit que du matin au soir. Les Chinois la cultivent depuis des millénaires et en mangent les boutons.",
     floraison: "Juin à août",
@@ -611,6 +652,7 @@ window.FLEURS = [
   },
   {
     nom: "Phlox", latin: "Phlox paniculata", wiki: "Phlox paniculata", emoji: "💗",
+    photo: "data/photos/phlox.jpg", credit: "(MHNT)_Phlox_paniculata_famous_light_purple_-_Les_Martels,_Giroussens_Tarn.jpg",
     genre: "m",
     description: "Le phlox vivace forme de gros bouquets parfumés, roses, blancs ou mauves, en plein cœur de l'été. Incontournable dans les jardins de curé.",
     etymologie: "Du grec « phlox », la flamme, pour l'éclat de ses couleurs. Théophraste désignait sous ce nom une autre fleur ; Linné le transféra à ce genre venu d'Amérique du Nord. « Paniculata » décrit ses fleurs groupées en panicule.",
@@ -624,6 +666,7 @@ window.FLEURS = [
   },
   {
     nom: "Verveine de Buenos Aires", latin: "Verbena bonariensis", wiki: "Verbena bonariensis", emoji: "💜",
+    photo: "data/photos/verveine-de-buenos-aires.jpg", credit: "Lund_Botanical_Garden_4.jpg",
     description: "Sur ses longues tiges fines, la verveine de Buenos Aires porte de petits bouquets mauves qui semblent flotter dans l'air. Les papillons ne la quittent pas.",
     etymologie: "« Verbena » désignait chez les Romains les rameaux sacrés (laurier, olivier, myrte, verveine) que portaient les prêtres et les hérauts. Les druides la tenaient pour « l'herbe sacrée ». « Bonariensis » : « de Buenos Aires », où elle fut découverte.",
     floraison: "Juillet jusqu'aux gelées",
@@ -636,6 +679,7 @@ window.FLEURS = [
   },
   {
     nom: "Ancolie", latin: "Aquilegia", wiki: "Ancolie", emoji: "💜",
+    photo: "data/photos/ancolie.jpg", credit: "AquilegiaVulgaris-closeup-hr.jpg",
     description: "L'ancolie a des fleurs étonnantes, en forme de bonnets d'elfes avec de longs éperons, dans des tons bleus, roses, blancs ou bicolores.",
     etymologie: "« Aquilegia » vient soit du latin « aquila », l'aigle, pour ses éperons recourbés comme des serres, soit de « aquilegium », le réservoir d'eau, pour le nectar que retiennent ces éperons. On l'appelait aussi « gants de Notre-Dame ».",
     floraison: "Mai à juin",
@@ -648,6 +692,7 @@ window.FLEURS = [
   },
   {
     nom: "Cyclamen", latin: "Cyclamen hederifolium", wiki: "Cyclamen hederifolium", emoji: "💗",
+    photo: "data/photos/cyclamen.jpg", credit: "C._hederifolium_flowers_&_leaves.jpg",
     genre: "m",
     description: "Le cyclamen de Naples fleurit en automne, sous les arbres, avec ses petites fleurs roses aux pétales retroussés et son feuillage marbré d'argent.",
     etymologie: "Du grec « kuklos », le cercle, pour son tubercule rond ou pour la tige qui s'enroule en spirale après la floraison. « Hederifolium » signifie « à feuilles de lierre ». Son surnom de « pain de pourceau » vient des cochons qui déterrent ses tubercules.",
@@ -661,6 +706,7 @@ window.FLEURS = [
   },
   {
     nom: "Forsythia", latin: "Forsythia × intermedia", wiki: "Forsythia", emoji: "💛",
+    photo: "data/photos/forsythia.jpg", credit: "Forsythia_close-up.jpg",
     genre: "m",
     description: "Le forsythia explose en jaune vif dès la fin de l'hiver, avant même d'avoir des feuilles. C'est le signal que le printemps arrive vraiment.",
     etymologie: "Nommé par Martin Vahl en l'honneur de William Forsyth, jardinier écossais, surintendant des jardins royaux de Kensington et cofondateur de la Royal Horticultural Society en 1804.",
@@ -674,6 +720,7 @@ window.FLEURS = [
   },
   {
     nom: "Pavot d'Orient", latin: "Papaver orientale", wiki: "Papaver orientale", emoji: "🧡",
+    photo: "data/photos/pavot-d-orient.jpg", credit: "Papaver_orientale_(2025).jpg",
     genre: "m",
     description: "Le pavot d'Orient produit d'énormes fleurs de soie orange, rouges ou saumon, à cœur noir, au-dessus d'un feuillage poilu. Un spectacle de fin de printemps.",
     etymologie: "« Papaver » est le nom latin du pavot ; « orientale », « d'Orient », car Tournefort le découvrit en Arménie lors de son voyage au Levant en 1701 et en rapporta les graines au Jardin du Roi, à Paris.",
@@ -687,6 +734,7 @@ window.FLEURS = [
   },
   {
     nom: "Scabieuse", latin: "Scabiosa", wiki: "Scabiosa", emoji: "💜",
+    photo: "data/photos/scabieuse.jpg", credit: "Scabiosa_nitens_(Flower).jpg",
     description: "La scabieuse porte des fleurs rondes en pelote, bleu lavande, roses ou presque noires, sur de fines tiges. Elle fleurit très longtemps et attire les papillons.",
     etymologie: "Du latin « scabies », la gale : la plante servait à soigner les maladies de peau. Sa variété pourpre presque noire lui valut le surnom de « fleur des veuves ».",
     floraison: "Juin à octobre",
@@ -699,6 +747,7 @@ window.FLEURS = [
   },
   {
     nom: "Alstroemère (Lys des Incas)", latin: "Alstroemeria", wiki: "Alstroemeria", emoji: "🧡",
+    photo: "data/photos/alstroemere-lys-des-incas.jpg", credit: "Alstroemeria_Saturne.jpg",
     description: "Le lys des Incas offre des fleurs tachetées de couleurs vives qui tiennent deux semaines en vase. Au jardin, il fleurit tout l'été sans effort.",
     etymologie: "Linné la dédia à son ami Clas Alströmer, baron et naturaliste suédois, qui lui envoya des graines récoltées en Espagne, où la plante était arrivée du Pérou et du Chili.",
     floraison: "Juin à octobre",
@@ -711,6 +760,7 @@ window.FLEURS = [
   },
   {
     nom: "Nigelle de Damas", latin: "Nigella damascena", wiki: "Nigelle de Damas", emoji: "💙",
+    photo: "data/photos/nigelle-de-damas.jpg", credit: "Nigella-damascena-JungferImGarten.jpg",
     description: "La nigelle, dite « cheveux de Vénus », a des fleurs bleu ciel entourées d'un fin feuillage vaporeux. Ses capsules décoratives font de beaux bouquets secs.",
     etymologie: "« Nigella » est un diminutif du latin « niger », noir, pour ses graines d'un noir brillant ; « damascena » : « de Damas ». Ses feuilles vaporeuses lui ont valu des noms poétiques : « cheveux de Vénus », « belle aux cheveux dénoués » ou « barbe-bleue ».",
     floraison: "Juin à août",
@@ -736,6 +786,7 @@ window.FLEURS = [
   },
   {
     nom: "Myosotis", latin: "Myosotis", wiki: "Myosotis", emoji: "💙",
+    photo: "data/photos/myosotis.jpg", credit: "Myosotis_victoria_dsc00894.jpg",
     genre: "m",
     description: "Le myosotis, « ne m'oubliez pas », forme un nuage de minuscules fleurs bleu ciel au printemps. Il se ressème partout et accompagne à merveille les tulipes.",
     etymologie: "Du grec « mus » (la souris) et « ôtos » (l'oreille) : « oreille de souris », pour ses petites feuilles douces et velues. Son surnom de « ne m'oubliez pas » vient d'une légende allemande : un chevalier emporté par le Danube lança la fleur à sa dame en criant « Vergiss mein nicht ».",
@@ -749,6 +800,7 @@ window.FLEURS = [
   },
   {
     nom: "Œillet d'Inde", latin: "Tagetes patula", wiki: "Tagetes patula", emoji: "🧡",
+    photo: "data/photos/illet-d-inde.jpg", credit: "French_marigold.jpg",
     genre: "m",
     description: "L'œillet d'Inde est l'annuelle facile par excellence : orange, jaune ou acajou, il fleurit tout l'été et protège le potager des nématodes.",
     etymologie: "« Tagetes » vient de Tagès, génie étrusque sorti d'un sillon de labour pour enseigner aux hommes l'art de la divination. « D'Inde » parce qu'il arriva du Mexique, les « Indes occidentales » ; « patula » signifie « étalée ».",
@@ -762,6 +814,7 @@ window.FLEURS = [
   },
   {
     nom: "Rose trémière", latin: "Alcea rosea", wiki: "Rose trémière", emoji: "💗",
+    photo: "data/photos/rose-tremiere.jpg", credit: "Alcea_rosea_by_Friedrich_Gottlob_Hayne.jpg",
     description: "La rose trémière dresse ses hampes de 2 mètres couvertes de fleurs en coupe le long des murs et des clôtures. Elle fait tout le charme des villages de l'île de Ré.",
     etymologie: "« Alcea » vient du grec « alkea », une mauve, de « alkê », la force ou le remède. « Trémière » est une déformation de « rose d'outre-mer » : la plante fut rapportée du Levant, peut-être par les croisés. On l'appelle aussi « passerose ».",
     floraison: "Juin à septembre",
@@ -774,6 +827,7 @@ window.FLEURS = [
   },
   {
     nom: "Perce-neige", latin: "Galanthus nivalis", wiki: "Perce-neige", emoji: "🤍",
+    photo: "data/photos/perce-neige.jpg", credit: "Schneeglocken.jpg",
     genre: "m",
     description: "Le perce-neige est la toute première fleur de l'année, ses clochettes blanches apparaissant dès janvier, parfois à travers la neige.",
     etymologie: "« Galanthus » vient du grec « gala » (le lait) et « anthos » (la fleur) : « la fleur de lait », pour son blanc pur ; « nivalis » signifie « des neiges ». Son nom français dit tout : elle perce la neige.",
@@ -787,6 +841,7 @@ window.FLEURS = [
   },
   {
     nom: "Spirée", latin: "Spiraea japonica", wiki: "Spiraea japonica", emoji: "💗",
+    photo: "data/photos/spiree.jpg", credit: "Spiraea_japonica_RF.jpg",
     description: "La spirée japonaise est un petit arbuste sans souci qui se couvre de corymbes roses tout l'été. Certaines variétés ont un jeune feuillage doré.",
     etymologie: "Du grec « speira », la spirale ou la guirlande, car ses rameaux souples servaient à tresser des couronnes. L'aspirine lui doit son nom : elle fut synthétisée à partir de l'acide spirique, isolé de la reine-des-prés, autrefois classée parmi les spirées.",
     floraison: "Juin à août",
@@ -799,6 +854,7 @@ window.FLEURS = [
   },
   {
     nom: "Gazania", latin: "Gazania", wiki: "Gazania", emoji: "🧡",
+    photo: "data/photos/gazania.jpg", credit: "Gazania_(beijing).jpg",
     genre: "m",
     description: "Le gazania ouvre ses grandes marguerites rayées aux couleurs de feu dès que le soleil brille, et les referme le soir. Parfait pour une rocaille ou un pot au soleil.",
     etymologie: "Nommé par Joseph Gaertner en l'honneur de Théodore Gaza, humaniste grec du XVe siècle, qui traduisit en latin les traités de botanique de Théophraste et les fit redécouvrir à l'Europe.",
@@ -825,6 +881,7 @@ window.FLEURS = [
   },
   {
     nom: "Échinacée", latin: "Echinacea purpurea", wiki: "Echinacea purpurea", emoji: "💗",
+    photo: "data/photos/echinacee.jpg", credit: "The_Botanical_Magazine-Vol_I_Pl._2.jpg",
     description: "La rudbeckie pourpre dresse de grandes marguerites roses à cœur orange bombé. Robuste et mellifère, elle est aussi connue pour ses vertus médicinales.",
     etymologie: "Du grec « echinos », le hérisson ou l'oursin, pour le cœur bombé et piquant de la fleur. « Purpurea » : « pourpre ». Les Amérindiens des Grandes Plaines l'utilisaient contre les infections bien avant les Européens.",
     floraison: "Juillet à septembre",
@@ -837,6 +894,7 @@ window.FLEURS = [
   },
   {
     nom: "Seringat", latin: "Philadelphus coronarius", wiki: "Seringat", emoji: "🤍",
+    photo: "data/photos/seringat.jpg", credit: "(MHNT)_Philadelphus_coronarius_flower_with_'Lasius_niger'.jpg",
     genre: "m",
     description: "Le seringat, ou jasmin des poètes, est un arbuste aux fleurs blanches au parfum de fleur d'oranger qui embaume tout le jardin en juin.",
     etymologie: "« Philadelphus » signifie en grec « qui aime son frère », peut-être en souvenir de Ptolémée II Philadelphe, roi d'Égypte. « Coronarius » : « à couronnes », car on en tressait des guirlandes. « Seringat » vient de « syringa », le tuyau, car on l'a longtemps confondu avec le lilas.",
@@ -850,6 +908,7 @@ window.FLEURS = [
   },
   {
     nom: "Souci", latin: "Calendula officinalis", wiki: "Souci officinal", emoji: "🧡",
+    photo: "data/photos/souci.jpg", credit: "Calendula_officinalis_-_Köhler–s_Medizinal-Pflanzen-024.jpg",
     genre: "m",
     description: "Le souci, aux fleurs orange lumineuses, est l'une des annuelles les plus faciles. Ses pétales se mangent et calment la peau en pommade.",
     etymologie: "« Calendula » vient du latin « calendae », les calendes, premier jour du mois, car il fleurit presque chaque mois de l'année. « Souci » n'a rien à voir avec l'inquiétude : il vient du latin « solsequium », « qui suit le soleil ».",
@@ -863,6 +922,7 @@ window.FLEURS = [
   },
   {
     nom: "Nénuphar", latin: "Nymphaea", wiki: "Nymphaea", emoji: "🪷",
+    photo: "data/photos/nenuphar.jpg", credit: "Pink_water_lily2.JPG",
     genre: "m",
     description: "Le nénuphar flotte paisiblement sur l'eau du bassin, ses fleurs blanches, roses ou jaunes s'ouvrant au soleil. Il ombrage l'eau et limite les algues.",
     etymologie: "« Nymphaea » vient des nymphes, divinités grecques des eaux. « Nénuphar » a voyagé loin : de l'arabe « nînûfar », du persan « nîlûfar », du sanskrit « nîlotpala », « le lotus bleu ». Depuis 1990, on peut aussi l'écrire « nénufar ».",
@@ -876,6 +936,7 @@ window.FLEURS = [
   },
   {
     nom: "Abélia", latin: "Abelia × grandiflora", wiki: "Abelia", emoji: "🤍",
+    photo: "data/photos/abelia.jpg", credit: "(MHNT)_Linnaea_×_grandiflora_Inflorescence_et_feuilles.jpg",
     genre: "m",
     description: "L'abélia est un arbuste discret mais précieux : ses petites fleurs blanc rosé parfumées se succèdent de l'été jusqu'aux gelées, sur un feuillage brillant.",
     etymologie: "Robert Brown le nomma en l'honneur de Clarke Abel, médecin et naturaliste de l'ambassade britannique en Chine en 1816. Abel perdit presque toutes ses récoltes dans un naufrage ; seules quelques graines sauvées permirent de faire connaître la plante.",
@@ -889,6 +950,7 @@ window.FLEURS = [
   },
   {
     nom: "Œillet de poète", latin: "Dianthus barbatus", wiki: "Œillet de poète", emoji: "💗",
+    photo: "data/photos/illet-de-poete.jpg", credit: "Törökszegfű.jpg",
     genre: "m",
     description: "L'œillet de poète forme de larges bouquets plats de petites fleurs rouges, roses et blanches, souvent bicolores. Un classique des bouquets de grand-mère.",
     etymologie: "« Dianthus », « la fleur de Zeus » chez Théophraste ; « barbatus » signifie « barbu », pour les bractées qui entourent les fleurs comme une petite barbe. Les Anglais l'appellent « sweet William », peut-être en l'honneur de Guillaume le Conquérant.",
