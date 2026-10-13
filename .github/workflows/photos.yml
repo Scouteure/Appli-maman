@@ -29,4 +29,5 @@ jobs:
           git add data/
           git diff --cached --quiet && echo "Aucune nouvelle photo" && exit 0
           git commit -m "Ajoute des photos de fleurs téléchargées automatiquement"
+          git pull --rebase origin "${GITHUB_REF_NAME}"
           git push
