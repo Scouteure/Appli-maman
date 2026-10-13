@@ -61,8 +61,27 @@
 
   function fleurDuJour(idx) {
     var fleurs = window.FLEURS;
-    // Un petit décalage pour que la suite des fleurs ne soit pas trop prévisible d'une année sur l'autre.
-    return fleurs[(idx * 7) % fleurs.length];
+    // Jusqu'au 13 octobre 2026 (jour 285), le site tournait sur les 70 premières fleurs : on garde le même
+    // ordre pour ces jours-là. Ensuite, on parcourt toute la liste avec un pas et un décalage choisis pour
+    // ne pas revoir trop vite les fleurs des jours précédents.
+    var PREMIERE_LISTE = 70, BASCULE = 285, DECALAGE = 3, PAS = 7;
+    if (idx <= BASCULE) return fleurs[(idx * 7) % PREMIERE_LISTE];
+    return fleurs[(DECALAGE + (idx - BASCULE) * PAS) % fleurs.length];
+  }
+
+  // Le saint du jour, d'après data/saints.js.
+  function saintDuJour(date) {
+    var mois = window.SAINTS && window.SAINTS[date.getMonth() + 1];
+    var entree = mois && mois[date.getDate() - 1];
+    if (!entree) return null;
+    if (entree.charAt(0) === "*") return { fete: entree.slice(1) };
+    return { prenom: entree };
+  }
+
+  function texteSaint(saint) {
+    if (!saint) return "";
+    if (saint.fete) return "🎀 Aujourd'hui, c'est " + saint.fete + " !";
+    return "🎀 Bonne fête aux " + saint.prenom + " !";
   }
 
   function formatDate(date) {
@@ -158,7 +177,7 @@
     return m ? m[0] : texte;
   }
 
-  function mascotte(fleur, boutonFleur) {
+  function mascotte(fleur, boutonFleur, saint) {
     var el = document.getElementById("mascotte");
     var bulle = document.getElementById("bulle");
     if (!el || !bulle) return;
@@ -224,7 +243,11 @@
     // Arrivée : petit coucou.
     setTimeout(function () {
       animer("coucou");
-      raconter(["Coucou ! Moi c'est Pompon 🐰", "Clique sur le bouton, j'ai une fleur à te montrer !"], 4500);
+      var accueil = ["Coucou ! Moi c'est Pompon 🐰"];
+      if (saint && saint.prenom) accueil.push("Et bonne fête à tous les " + saint.prenom + " ! 🎉");
+      else if (saint && saint.fete) accueil.push("Aujourd'hui, c'est " + saint.fete + " ! 🎉");
+      accueil.push("Clique sur le bouton, j'ai une fleur à te montrer !");
+      raconter(accueil, 4500);
     }, 1300);
 
     // Quand la fleur apparaît : il saute et la présente.
@@ -265,6 +288,8 @@
     var idx = indexDuJour(date);
 
     texte("date-du-jour", formatDate(date));
+    var saint = saintDuJour(date);
+    texte("saint-du-jour", texteSaint(saint));
     texte("message-du-jour", messageDuJour(date, idx));
 
     var fleur = fleurDuJour(idx);
@@ -281,7 +306,7 @@
     });
 
     petales();
-    mascotte(fleur, bouton);
+    mascotte(fleur, bouton, saint);
   }
 
   document.addEventListener("DOMContentLoaded", init);
