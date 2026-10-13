@@ -3,12 +3,12 @@
 Une petite page web, à ouvrir chaque jour, qui affiche :
 
 1. un gentil message qui change tous les jours ;
-2. un bouton « Découvrir la fleur du jour » ;
+2. le saint du jour, puis un bouton « Découvrir la fleur du jour » ;
 3. une fiche fleur (photo, description, étymologie du nom, floraison, exposition, arrosage, sol, plantation, conseil, langage des fleurs) qui change aussi tous les jours ;
 4. Pompon, un petit lapin animé (sur ordinateur) qui présente la fleur et bavarde quand on clique sur lui.
 
 Tout fonctionne sans serveur : ce sont de simples fichiers HTML / CSS / JavaScript.
-Il y a 70 fleurs et 45 messages, qui tournent automatiquement en boucle.
+Il y a 130 fleurs et 45 messages, qui tournent automatiquement en boucle, plus le saint du jour.
 
 ## Mettre le site en ligne (gratuit, avec GitHub Pages)
 
@@ -25,6 +25,7 @@ Tu peux envoyer ce lien à ta maman ; sur téléphone, elle peut même l'ajouter
 - **Les messages** : `data/messages.js`. Ajoute ou modifie des lignes dans la liste `MESSAGES`.
 - **Les messages pour une date précise** (anniversaire, etc.) : dans le même fichier, `MESSAGES_SPECIAUX`, au format `"MM-JJ": "Message"`. Un exemple est déjà prêt en commentaire.
 - **La fête des mères** est détectée automatiquement (dernier dimanche de mai en France) et affiche `MESSAGE_FETE_DES_MERES`.
+- **Le saint du jour** : `data/saints.js`, un tableau par mois. Une entrée qui commence par `*` est une fête et non un prénom.
 - **Les fleurs** : `data/fleurs.js`. Chaque fleur a un champ `etymologie` qui raconte l'origine de son nom. Chaque fleur a une photo dans `data/photos/` (issue de Wikimedia Commons, le champ `credit` garde le nom du fichier d'origine) et un champ `wiki` qui pointe vers sa page Wikipédia.
 - **Ce que dit Pompon** : dans `app.js`, les listes `presentation` et `bavardages` de la fonction `mascotte`.
 - **Les couleurs** : en haut de `style.css`, dans `:root`.
