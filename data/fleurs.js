@@ -1035,7 +1035,7 @@ window.FLEURS = [
   },
   {
     nom: "Cœur-de-Marie", latin: "Lamprocapnos spectabilis", wiki: "Lamprocapnos spectabilis", emoji: "💗",
-    photo: "data/photos/cur-de-marie.jpg", credit: "Tränendes_Herz_5284.JPG",
+    photo: "data/photos/coeur-de-marie.jpg", credit: "Tränendes_Herz_5284.JPG",
     genre: "m",
     description: "Le cœur-de-Marie aligne sur des tiges arquées des petits cœurs roses d'où s'échappe une goutte blanche. Cette vivace d'ombre est l'une des plus poétiques du printemps.",
     etymologie: "Longtemps appelé « Dicentra », du grec « dis » (deux) et « kentron » (éperon), pour ses deux pétales en éperon, il a été reclassé en « Lamprocapnos », de « lampros » (brillant) et « kapnos » (fumée), par parenté avec les fumeterres. « Spectabilis » signifie « remarquable ». Les Anglais l'appellent « bleeding heart », le cœur qui saigne.",
@@ -1155,7 +1155,7 @@ window.FLEURS = [
     symbole: "La beauté délicate et la gloire éphémère",
   },
   {
-    nom: "Hosta", latin: "Hosta", wiki: "Hosta", emoji: "💜",
+    nom: "Hosta", latin: "Hosta", wiki: "Hosta sieboldiana", emoji: "💜",
     genre: "m",
     description: "L'hosta est d'abord cultivé pour son feuillage somptueux, bleu, doré ou panaché, qui illumine les coins d'ombre. Mais ses hampes de clochettes mauves ou blanches, parfois parfumées, sont un vrai plus en été.",
     etymologie: "Nommé en 1812 par Leopold Trattinnick en l'honneur de Nicolaus Thomas Host, médecin de l'empereur d'Autriche et botaniste viennois. On l'a longtemps appelé « Funkia », d'après le pharmacien allemand Heinrich Funck. Au Japon, où il pousse à l'état sauvage, ses jeunes pousses se mangent.",
