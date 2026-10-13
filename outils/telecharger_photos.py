@@ -37,13 +37,19 @@ def get(url, essais=5):
 def main():
     PHOTOS.mkdir(exist_ok=True)
     src = FLEURS.read_text(encoding="utf-8")
-    blocs = re.findall(r'(    nom: "([^"]+)", latin: "[^"]+", wiki: "([^"]+)", emoji: "[^"]+",\n)(    photo: [^\n]*\n)?', src)
-    for entete, nom, wiki in [(b[0], b[1], b[2]) for b in blocs if not b[3]]:
-        titre = wiki.replace(" ", "_")
-        url = ("https://fr.wikipedia.org/w/api.php?action=query&format=json&prop=pageimages"
-               "&piprop=thumbnail|name&pithumbsize=640&redirects=1&titles=" + urllib.parse.quote(titre))
-        page = list(json.loads(get(url))["query"]["pages"].values())[0]
-        if "thumbnail" not in page:
+    blocs = re.findall(r'(    nom: "([^"]+)", latin: "([^"]+)", wiki: "([^"]+)", emoji: "[^"]+",\n)(    photo: [^\n]*\n)?', src)
+    for entete, nom, latin, wiki in [(b[0], b[1], b[2], b[3]) for b in blocs if not b[4]]:
+        page = None
+        # D'abord le Wikipédia français (titre « wiki »), puis l'anglais avec le nom latin.
+        for site, titre in (("fr", wiki), ("en", latin.split(" '")[0].replace(" × ", " × "))):
+            url = (f"https://{site}.wikipedia.org/w/api.php?action=query&format=json&prop=pageimages"
+                   "&piprop=thumbnail|name&pithumbsize=640&redirects=1&titles=" + urllib.parse.quote(titre.replace(" ", "_")))
+            candidat = list(json.loads(get(url))["query"]["pages"].values())[0]
+            time.sleep(2)
+            if "thumbnail" in candidat:
+                page = candidat
+                break
+        if page is None:
             print(f"{nom} : pas d'image sur Wikipédia")
             continue
         time.sleep(3)
