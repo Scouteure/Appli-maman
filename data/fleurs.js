@@ -1156,6 +1156,7 @@ window.FLEURS = [
   },
   {
     nom: "Hosta", latin: "Hosta", wiki: "Hosta sieboldiana", emoji: "💜",
+    photo: "data/photos/hosta.jpg", credit: "Hosta_Bressingham_Blue.JPG",
     genre: "m",
     description: "L'hosta est d'abord cultivé pour son feuillage somptueux, bleu, doré ou panaché, qui illumine les coins d'ombre. Mais ses hampes de clochettes mauves ou blanches, parfois parfumées, sont un vrai plus en été.",
     etymologie: "Nommé en 1812 par Leopold Trattinnick en l'honneur de Nicolaus Thomas Host, médecin de l'empereur d'Autriche et botaniste viennois. On l'a longtemps appelé « Funkia », d'après le pharmacien allemand Heinrich Funck. Au Japon, où il pousse à l'état sauvage, ses jeunes pousses se mangent.",
