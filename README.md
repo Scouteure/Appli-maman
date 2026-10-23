@@ -5,7 +5,8 @@ Une petite page web, à ouvrir chaque jour, qui affiche :
 1. un gentil message qui change tous les jours ;
 2. le saint du jour, puis un bouton « Découvrir la fleur du jour » ;
 3. une fiche fleur (photo, description, étymologie du nom, floraison, exposition, arrosage, sol, plantation, conseil, langage des fleurs) qui change aussi tous les jours ;
-4. Pompon, un petit lapin animé (sur ordinateur) qui présente la fleur et bavarde quand on clique sur lui.
+4. Pompon, un petit lapin animé qui présente la fleur et bavarde quand on clique sur lui ;
+5. un bouton « Télécharger la fiche du jour » qui crée une belle page PNG (format A4) nommée avec la date, le numéro et le nom de la fleur, et un « classeur » des fiches précédentes, téléchargeables une par une ou toutes ensemble en zip.
 
 Tout fonctionne sans serveur : ce sont de simples fichiers HTML / CSS / JavaScript.
 Il y a 130 fleurs et 45 messages, qui tournent automatiquement en boucle, plus le saint du jour.
@@ -28,6 +29,7 @@ Tu peux envoyer ce lien à ta maman ; sur téléphone, elle peut même l'ajouter
 - **Le saint du jour** : `data/saints.js`, un tableau par mois. Une entrée qui commence par `*` est une fête et non un prénom.
 - **Les fleurs** : `data/fleurs.js`. Chaque fleur a un champ `etymologie` qui raconte l'origine de son nom. Chaque fleur a une photo dans `data/photos/` (issue de Wikimedia Commons, le champ `credit` garde le nom du fichier d'origine) et un champ `wiki` qui pointe vers sa page Wikipédia.
 - **Ce que dit Pompon** : dans `app.js`, les listes `presentation` et `bavardages` de la fonction `mascotte`.
+- **La fiche PNG** : `fiche.js` dessine la page dans un canvas ; les couleurs et la mise en page sont en haut du fichier. La numérotation des fiches commence le 6 octobre 2026 (`PREMIER_JOUR` dans `app.js`).
 - **Les couleurs** : en haut de `style.css`, dans `:root`.
 
 ## Tester une autre date

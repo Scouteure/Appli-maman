@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=20261013">
+  <link rel="stylesheet" href="style.css?v=20261023">
 </head>
 <body>
   <div class="petales" aria-hidden="true"></div>
@@ -114,13 +114,31 @@
 
       <a class="lien-wiki" id="fleur-lien" href="#" target="_blank" rel="noopener">En savoir plus sur Wikipédia ↗</a>
 
+      <div class="fiche-zone">
+        <button class="bouton bouton-secondaire" id="bouton-fiche" type="button">📄 Télécharger la fiche du jour</button>
+        <p class="fiche-aide">Une belle page à imprimer ou à ranger dans ton classeur, avec la date, le numéro et le nom de la fleur.</p>
+        <p class="fiche-etat" id="fiche-etat"></p>
+      </div>
+
       <p class="a-demain">À demain pour une nouvelle fleur 🌸</p>
+    </section>
+
+    <section class="carte archives-carte cachee" id="archives-section" aria-hidden="true">
+      <p class="surtitre">Le classeur</p>
+      <h2 class="archives-titre">Les fiches précédentes</h2>
+      <p class="archives-intro">Toutes les fleurs déjà présentées, de la plus récente à la première. Chaque fiche se télécharge en image, nommée avec sa date et son numéro.</p>
+      <ul class="liste-fiches" id="liste-fiches"></ul>
+      <div class="archives-actions">
+        <button class="bouton bouton-secondaire" id="bouton-zip" type="button">📦 Tout télécharger d'un coup (zip)</button>
+        <p class="fiche-etat" id="zip-etat"></p>
+      </div>
     </section>
   </main>
 
-  <script src="data/messages.js?v=20261013"></script>
-  <script src="data/saints.js?v=20261013"></script>
-  <script src="data/fleurs.js?v=20261013"></script>
-  <script src="app.js?v=20261013"></script>
+  <script src="data/messages.js?v=20261023"></script>
+  <script src="data/saints.js?v=20261023"></script>
+  <script src="data/fleurs.js?v=20261023"></script>
+  <script src="fiche.js?v=20261023"></script>
+  <script src="app.js?v=20261023"></script>
 </body>
 </html>

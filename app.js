@@ -267,6 +267,128 @@
     });
   }
 
+  // --- Les fiches à télécharger ---
+  var PREMIER_JOUR = 278; // 6 octobre 2026, jour où le site a été offert : fiche n° 1
+  var SITE = "scouteure.github.io/Appli-maman";
+
+  function dateDepuisIndex(idx) { return new Date(2026, 0, 1 + idx); }
+
+  // Nom de fichier sans accent ni caractère spécial, pour que tous les navigateurs l'acceptent tel quel.
+  function nomFichier(infos) {
+    var d = infos.dateObj;
+    var iso = d.getFullYear() + "-" + pad(d.getMonth() + 1) + "-" + pad(d.getDate());
+    var nom = infos.fleur.nom.replace(/œ/g, "oe").replace(/Œ/g, "Oe").normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^A-Za-z0-9 ()'-]/g, "");
+    var numero = (infos.numero < 10 ? "00" : infos.numero < 100 ? "0" : "") + infos.numero;
+    return iso + " - Fiche " + numero + " - " + nom + ".png";
+  }
+
+  function infosFiche(idx) {
+    var d = dateDepuisIndex(idx);
+    var saint = saintDuJour(d);
+    return {
+      fleur: fleurDuJour(idx),
+      numero: idx - PREMIER_JOUR + 1,
+      dateObj: d,
+      date: formatDate(d),
+      saint: saint ? texteSaint(saint).replace(/^🎀 /, "") : "",
+      site: SITE,
+    };
+  }
+
+  // Enregistre un fichier : via la capacité « downloads » dans l'Artifact claude.ai, sinon par un lien de téléchargement.
+  function enregistrer(blob, nom) {
+    var capacite = window.claude && typeof window.claude.use === "function" ? window.claude.use("downloads").catch(function () { return null; }) : Promise.resolve(null);
+    return capacite.then(function (downloads) {
+      if (downloads && downloads.save) return downloads.save({ filename: nom, data: blob });
+      var url = URL.createObjectURL(blob);
+      var a = document.createElement("a");
+      a.href = url; a.download = nom;
+      document.body.appendChild(a);
+      a.click();
+      setTimeout(function () { a.remove(); URL.revokeObjectURL(url); }, 10000);
+    });
+  }
+
+  function telechargerFiche(idx, bouton, etat) {
+    var infos = infosFiche(idx);
+    if (bouton) bouton.disabled = true;
+    if (etat) etat.textContent = "Préparation de la fiche…";
+    return window.genererFiche(infos)
+      .then(function (blob) { return enregistrer(blob, nomFichier(infos)); })
+      .then(function () { if (etat) etat.textContent = "C'est prêt ! Fiche n°" + infos.numero + " : " + infos.fleur.nom + " 🌸"; })
+      .catch(function (e) { if (etat) etat.textContent = e && e.code === "declined" ? "Téléchargement annulé." : "Oups, la fiche n'a pas pu être créée. Réessaie dans un instant."; })
+      .then(function () { if (bouton) bouton.disabled = false; });
+  }
+
+  function chargerScript(src) {
+    return new Promise(function (ok, ko) {
+      var s = document.createElement("script");
+      s.src = src; s.onload = ok; s.onerror = function () { ko(new Error("script")); };
+      document.head.appendChild(s);
+    });
+  }
+
+  function toutTelecharger(idxMax, bouton, etat) {
+    bouton.disabled = true;
+    etat.textContent = "Préparation du dossier…";
+    var promesse = window.JSZip ? Promise.resolve() : chargerScript("https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js");
+    return promesse.then(function () {
+      var zip = new window.JSZip();
+      var dossier = zip.folder("Fiches fleurs");
+      var liste = [];
+      for (var i = PREMIER_JOUR; i <= idxMax; i++) liste.push(i);
+      var n = 0;
+      return liste.reduce(function (suite, idx) {
+        return suite.then(function () {
+          var infos = infosFiche(idx);
+          n++;
+          etat.textContent = "Fiche " + n + " sur " + liste.length + " : " + infos.fleur.nom + "…";
+          return window.genererFiche(infos).then(function (blob) { dossier.file(nomFichier(infos), blob); });
+        });
+      }, Promise.resolve()).then(function () {
+        etat.textContent = "Compression du dossier…";
+        return zip.generateAsync({ type: "blob" });
+      });
+    })
+      .then(function (blob) { return enregistrer(blob, "Fiches fleurs - " + liste_date() + ".zip"); })
+      .then(function () { etat.textContent = "C'est prêt ! Toutes les fiches sont dans le dossier zip 📦"; })
+      .catch(function (e) { etat.textContent = e && e.code === "declined" ? "Téléchargement annulé." : "Oups, le dossier n'a pas pu être créé."; })
+      .then(function () { bouton.disabled = false; });
+
+    function liste_date() { var d = new Date(); return d.getFullYear() + "-" + pad(d.getMonth() + 1) + "-" + pad(d.getDate()); }
+  }
+
+  function dateCourte(d) {
+    try { return d.toLocaleDateString("fr-FR", { day: "numeric", month: "short", year: "numeric" }); } catch (e) { return d.toLocaleDateString(); }
+  }
+
+  function construireArchives(idxAujourdhui) {
+    var section = document.getElementById("archives-section");
+    var liste = document.getElementById("liste-fiches");
+    if (!section || !liste || !window.genererFiche) return;
+    for (var idx = idxAujourdhui; idx >= PREMIER_JOUR; idx--) {
+      (function (idx) {
+        var infos = infosFiche(idx);
+        var li = document.createElement("li");
+        var num = document.createElement("span"); num.className = "fiche-num"; num.textContent = "n°" + infos.numero;
+        var date = document.createElement("span"); date.className = "fiche-date"; date.textContent = dateCourte(infos.dateObj);
+        var nom = document.createElement("span"); nom.className = "fiche-nom"; nom.textContent = infos.fleur.emoji + " " + infos.fleur.nom + (idx === idxAujourdhui ? " (aujourd'hui)" : "");
+        var bouton = document.createElement("button"); bouton.type = "button"; bouton.textContent = "📄 Télécharger";
+        bouton.addEventListener("click", function () {
+          bouton.textContent = "⏳ Préparation…";
+          telechargerFiche(idx, bouton, null).then(function () { bouton.textContent = "✅ Téléchargée"; setTimeout(function () { bouton.textContent = "📄 Télécharger"; }, 4000); });
+        });
+        li.appendChild(num); li.appendChild(date); li.appendChild(nom); li.appendChild(bouton);
+        liste.appendChild(li);
+      })(idx);
+    }
+    var zipBouton = document.getElementById("bouton-zip");
+    var zipEtat = document.getElementById("zip-etat");
+    if (zipBouton) zipBouton.addEventListener("click", function () { toutTelecharger(idxAujourdhui, zipBouton, zipEtat); });
+    section.classList.remove("cachee");
+    section.setAttribute("aria-hidden", "false");
+  }
+
   function petales() {
     var conteneur = document.querySelector(".petales");
     if (!conteneur) return;
@@ -307,6 +429,14 @@
 
     petales();
     mascotte(fleur, bouton, saint);
+
+    var boutonFiche = document.getElementById("bouton-fiche");
+    if (boutonFiche && window.genererFiche) {
+      boutonFiche.addEventListener("click", function () { telechargerFiche(idx, boutonFiche, document.getElementById("fiche-etat")); });
+    } else if (boutonFiche) {
+      boutonFiche.parentNode.style.display = "none";
+    }
+    construireArchives(idx);
   }
 
   document.addEventListener("DOMContentLoaded", init);
